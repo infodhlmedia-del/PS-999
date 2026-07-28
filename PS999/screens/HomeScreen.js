@@ -256,7 +256,7 @@ export default function HomeScreen({ navigation }) {
           onPress={() => navigation.navigate('PSStarline')}
         >
           <View style={styles.iconCircle}>
-            <MaterialIcons name="play-arrow" size={26} color="#000" />
+            <MaterialIcons name="play-arrow" size={26} color="#fff" />
           </View>
           <Text style={styles.gameButtonText} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.6} ellipsizeMode='tail'>King Starline</Text>
         </TouchableOpacity>
@@ -266,7 +266,7 @@ export default function HomeScreen({ navigation }) {
           onPress={() => navigation.navigate('PSJackpotScreen')}
         >
           <View style={styles.iconCircle}>
-            <MaterialIcons name="play-arrow" size={26} color="#000" />
+            <MaterialIcons name="play-arrow" size={26} color="#fff" />
           </View>
           <Text style={styles.gameButtonText} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.6} ellipsizeMode='tail'>King Jackpot</Text>
         </TouchableOpacity>
@@ -572,28 +572,28 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#001228',
+    backgroundColor: '#ffffff',
     paddingVertical: 8,
     borderRadius: 30,
     marginHorizontal: 3,
-    borderWidth: 2,
-    borderColor: '#000',
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 8 },
-    shadowOpacity: 0.55,
-    shadowRadius: 10,
-    elevation: 18,
+    borderWidth: 1.5,
+    borderColor: '#1b63a6',
+    shadowColor: "#1b63a6",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 6,
+    elevation: 4,
     height: 45,
     paddingHorizontal: 8,
     justifyContent: 'flex-start',
     paddingLeft: 2,
   },
   gameButtonText: {
-    color: '#fff',
-    fontSize: 16, // Reduced from 18 to fit better
-    marginLeft: 10, // Reduced from 12
+    color: '#1b63a6',
+    fontSize: 16,
+    marginLeft: 10,
     fontFamily: 'Raleway_600SemiBold',
-    flex: 1, // Added flex: 1 to ensure it stays in bounds
+    flex: 1,
   },
   actionWrapper: {
     backgroundColor: '#0c1b30',
