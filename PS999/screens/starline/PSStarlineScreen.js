@@ -261,7 +261,7 @@ const styles = StyleSheet.create({
   balancePill: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#C85C73',
+    backgroundColor: '#1b63a6',
     paddingHorizontal: 12,
     paddingVertical: 8,
     borderRadius: 25,
@@ -326,7 +326,7 @@ const styles = StyleSheet.create({
   rateValue: {
     fontSize: 14,
     fontWeight: 'bold',
-    color: '#C85C73',
+    color: '#1b63a6',
   },
   marketCard: {
     backgroundColor: '#fff',

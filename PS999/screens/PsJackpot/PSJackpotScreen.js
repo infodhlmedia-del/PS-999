@@ -322,7 +322,7 @@ const styles = StyleSheet.create({
   balanceChip: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#C85C73',
+    backgroundColor: '#1b63a6',
     paddingHorizontal: 12,
     paddingVertical: 6,
     borderRadius: 20,
@@ -385,7 +385,7 @@ const styles = StyleSheet.create({
   },
   jodiValue: {
     fontSize: 18,
-    color: '#C85C73',
+    color: '#1b63a6',
     fontFamily: 'Poppins_600SemiBold',
     fontWeight: 'bold',
   },

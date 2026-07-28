@@ -50,7 +50,7 @@ export default function MatkaChartsListScreen({ navigation }) {
             {/* Content */}
             <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
                 {loading ? (
-                    <ActivityIndicator size="large" color="#C85C73" style={{ marginTop: 50 }} />
+                    <ActivityIndicator size="large" color="#1b63a6" style={{ marginTop: 50 }} />
                 ) : markets.length === 0 ? (
                     <Text style={styles.emptyText}>No charts available</Text>
                 ) : (
@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
         gap: 8,
     },
     actionButton: {
-        backgroundColor: '#C85C73', // Pink/Red color from image
+        backgroundColor: '#1b63a6', // Pink/Red color from image
         paddingHorizontal: 18,
         paddingVertical: 8,
         borderRadius: 5,

@@ -865,7 +865,7 @@ const styles = StyleSheet.create({
   },
   navText: {
     fontSize: 11,
-    color: '#555',
+    color: '#a0aec0',
     marginTop: 4,
     fontFamily: 'sans-serif',
   },
