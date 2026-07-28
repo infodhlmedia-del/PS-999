@@ -785,7 +785,7 @@ const styles = StyleSheet.create({
   },
   gameName: {
     fontSize: 22,
-    color: '#ffffff',
+    color: '#000000',
     fontFamily: 'Poppins_600SemiBold',
   },
   gameCode: {
@@ -907,7 +907,7 @@ const styles = StyleSheet.create({
   infoModalTitle: {
     fontSize: 20,
     fontFamily: 'Roboto_700Bold',
-    color: '#ffffff',
+    color: '#000000',
     textAlign: 'center',
   },
   infoModalClose: {
@@ -935,7 +935,7 @@ const styles = StyleSheet.create({
   },
   timeLabel: {
     fontSize: 16,
-    color: '#ffffff',
+    color: '#000000',
     fontFamily: 'Poppins_500Medium',
   },
   timeValue: {
