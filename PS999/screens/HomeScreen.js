@@ -244,7 +244,7 @@ export default function HomeScreen({ navigation }) {
             <Text style={styles.balanceText}>{balance.toFixed(1)}</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => navigation.navigate('Notification')}>
-            <Ionicons name="notifications" size={24} color="#1b63a6" style={styles.notificationIcon} />
+            <Ionicons name="notifications" size={24} color="#fff" style={styles.notificationIcon} />
           </TouchableOpacity>
         </View>
       </View>
