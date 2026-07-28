@@ -255,11 +255,11 @@ export default function RegisterScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1e63b3',
+    backgroundColor: '#081d33',
   },
   content: {
     flex: 1,
-    backgroundColor: '#f5f7fa',
+    backgroundColor: '#ffffff',
     marginTop: 100,
     borderTopLeftRadius: 40,
     borderTopRightRadius: 40,
@@ -342,7 +342,7 @@ const styles = StyleSheet.create({
   },
   registerButton: {
     width: '90%',
-    backgroundColor: '#1b63a6',
+    backgroundColor: '#000000',
     paddingVertical: 15,
     borderRadius: 30,
     alignItems: 'center',

@@ -386,7 +386,7 @@ export default function HomeScreen({ navigation }) {
           style={styles.navItem}
           onPress={() => navigation.navigate('MyBids')}
         >
-          <Image source={require('../assets/footer-icons/bids_new.png')} style={[styles.navIcon, { tintColor: '#000' }]} />
+          <Image source={require('../assets/footer-icons/bids_new.png')} style={[styles.navIcon, { tintColor: '#ffffff' }]} />
           <Text style={styles.navText}>My Bids</Text>
         </TouchableOpacity>
 
@@ -394,7 +394,7 @@ export default function HomeScreen({ navigation }) {
           style={styles.navItem}
           onPress={() => navigation.navigate('Passbook')}
         >
-          <Image source={require('../assets/footer-icons/passbook.png')} style={[styles.navIcon, { tintColor: '#000' }]} />
+          <Image source={require('../assets/footer-icons/passbook.png')} style={[styles.navIcon, { tintColor: '#ffffff' }]} />
           <Text style={styles.navText}>Passbook</Text>
         </TouchableOpacity>
 
@@ -413,7 +413,7 @@ export default function HomeScreen({ navigation }) {
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.navItem} onPress={openSupportWhatsApp}>
-          <Image source={require('../assets/footer-icons/chat_new.png')} style={[styles.navIcon, { tintColor: '#000' }]} />
+          <Image source={require('../assets/footer-icons/chat_new.png')} style={[styles.navIcon, { tintColor: '#ffffff' }]} />
           <Text style={styles.navText}>Support</Text>
         </TouchableOpacity>
       </View>
@@ -508,7 +508,7 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#e8ebf0',
+    backgroundColor: '#081d33',
   },
   header: {
     flexDirection: 'row',
@@ -521,7 +521,7 @@ const styles = StyleSheet.create({
   menuButton: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#1b63a6',
+    backgroundColor: '#001228',
     paddingHorizontal: 15,
     paddingVertical: 8,
     borderRadius: 25,
@@ -544,7 +544,7 @@ const styles = StyleSheet.create({
   balanceChip: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#1b63a6',
+    backgroundColor: '#001228',
     paddingHorizontal: 15,
     paddingVertical: 8,
     borderRadius: 25,
@@ -581,7 +581,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#0C1B30',
+    backgroundColor: '#001228',
     paddingVertical: 8,
     borderRadius: 30,
     marginHorizontal: 3,
@@ -605,7 +605,7 @@ const styles = StyleSheet.create({
     flex: 1, // Added flex: 1 to ensure it stays in bounds
   },
   actionWrapper: {
-    backgroundColor: '#dbeafe',
+    backgroundColor: '#0c1b30',
     marginHorizontal: 13,
     borderRadius: 12,
     paddingVertical: 10,
@@ -770,7 +770,7 @@ const styles = StyleSheet.create({
     width: 55,
     height: 55,
     borderRadius: 12,
-    backgroundColor: '#1b63a6',
+    backgroundColor: '#001228',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -785,7 +785,7 @@ const styles = StyleSheet.create({
   },
   gameName: {
     fontSize: 22,
-    color: '#000',
+    color: '#ffffff',
     fontFamily: 'Poppins_600SemiBold',
   },
   gameCode: {
@@ -854,7 +854,7 @@ const styles = StyleSheet.create({
     width: 55,
     height: 55,
     borderRadius: 27.5,
-    backgroundColor: '#1b63a6',
+    backgroundColor: '#001228',
     justifyContent: 'center',
     alignItems: 'center',
     shadowColor: '#000',
@@ -907,7 +907,7 @@ const styles = StyleSheet.create({
   infoModalTitle: {
     fontSize: 20,
     fontFamily: 'Roboto_700Bold',
-    color: '#000',
+    color: '#ffffff',
     textAlign: 'center',
   },
   infoModalClose: {
@@ -935,7 +935,7 @@ const styles = StyleSheet.create({
   },
   timeLabel: {
     fontSize: 16,
-    color: '#000',
+    color: '#ffffff',
     fontFamily: 'Poppins_500Medium',
   },
   timeValue: {
@@ -944,7 +944,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_400Regular',
   },
   infoModalOkButton: {
-    backgroundColor: '#1b63a6',
+    backgroundColor: '#001228',
     borderRadius: 10,
     paddingVertical: 12,
     alignItems: 'center',
