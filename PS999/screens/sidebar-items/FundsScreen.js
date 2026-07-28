@@ -50,11 +50,11 @@ export default function FundsScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
+      <StatusBar barStyle="light-content" backgroundColor="#1b63a6" />
 
       <View style={styles.header}>
         <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
-          <Ionicons name="arrow-back" size={24} color="#000" />
+          <Ionicons name="arrow-back" size={24} color="#fff" />
         </TouchableOpacity>
         <Text style={styles.headerTitle}>Funds</Text>
         <View style={{ width: 40 }} />
@@ -74,7 +74,7 @@ export default function FundsScreen({ navigation }) {
               <Text style={styles.optionTitle}>{option.title}</Text>
               <Text style={styles.optionSubtitle}>{option.subtitle}</Text>
             </View>
-            <Ionicons name="chevron-forward" size={24} color="#D4B5A5" />
+            <Ionicons name="chevron-forward" size={24} color="#1b63a6" />
           </TouchableOpacity>
         ))}
       </ScrollView>
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     paddingVertical: 12,
     paddingTop: 40,
-    backgroundColor: '#f5f7fa',
+    backgroundColor: '#1b63a6',
   },
   backButton: {
     padding: 5,
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#000',
+    color: '#fff',
     fontFamily: 'Poppins_600SemiBold',
   },
   content: {
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
     borderRadius: 30,
-    backgroundColor: '#5D3A2E',
+    backgroundColor: '#1b63a6',
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: 15,
