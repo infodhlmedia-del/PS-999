@@ -228,7 +228,7 @@ export default function HomeScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
+      <StatusBar barStyle="light-content" backgroundColor="#1b63a6" />
       <CustomLoader visible={refreshing} />
 
       {/* Header */}
@@ -517,19 +517,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     paddingVertical: 12,
     paddingTop: 45,
+    backgroundColor: '#1b63a6',
   },
   menuButton: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#001228',
+    backgroundColor: 'rgba(255,255,255,0.15)',
     paddingHorizontal: 15,
     paddingVertical: 8,
     borderRadius: 25,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.45,
-    shadowRadius: 8,
-    elevation: 12,
   },
   headerTitle: {
     color: '#fff',
@@ -544,16 +540,11 @@ const styles = StyleSheet.create({
   balanceChip: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#001228',
+    backgroundColor: 'rgba(255,255,255,0.15)',
     paddingHorizontal: 15,
     paddingVertical: 8,
     borderRadius: 25,
     marginRight: 10,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.45,
-    shadowRadius: 8,
-    elevation: 12,
   },
   rupeeSymbol: {
     color: '#fff',
