@@ -1,0 +1,5 @@
+PS999/node_modules/
+PS999/.expo/
+.idea/
+.vscode/
+*.log

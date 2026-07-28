@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "PS 999",
+    "icon": "./assets/icons/app-icon.png",
+    "slug": "ps999app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash/splash-screen.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "updates": {
+      "enabled": false
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.ps999",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.yourcompany.ps999",
+      "versionCode": 10,
+      "googleServicesFile": "./assets/google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icons/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash/splash-screen.png",
+          "imageWidth": 320, 
+          "resizeMode": "contain",
+          "backgroundColor": "#FFFFFF" 
+        }
+      ],
+      "expo-font",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icons/notification-icon.png",
+          "color": "#FFFFFF",
+          "defaultChannel": "default"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "3eaddc7c-cb53-43b4-bb12-15e212b7f53b"
+      }
+    }
+  }
+}
