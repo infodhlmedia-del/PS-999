@@ -28,14 +28,14 @@ const CustomLoader = ({ visible }) => {
 
     // Exact dots configuration to match the provided image
     const dots = [
-        { angle: 0,   size: 16, color: '#F8E79F' }, // Top (Pale Yellow)
-        { angle: 45,  size: 6,  color: '#5A201A' }, // Top-Right (Dark Brown)
-        { angle: 90,  size: 10, color: '#C83B2E' }, // Right (Red)
-        { angle: 135, size: 14, color: '#E7533B' }, // Bottom-Right (Light Red)
-        { angle: 180, size: 18, color: '#D16223' }, // Bottom (Dark Orange)
-        { angle: 225, size: 22, color: '#EA9321' }, // Bottom-Left (Orange)
-        { angle: 270, size: 24, color: '#F1B419' }, // Left (Yellow/Gold)
-        { angle: 315, size: 20, color: '#F6CE44' }, // Top-Left (Light Gold)
+        { angle: 0,   size: 16, color: '#E3F0FF' }, // Top (Lightest Blue)
+        { angle: 45,  size: 6,  color: '#081d33' }, // Top-Right (Dark Navy)
+        { angle: 90,  size: 10, color: '#0d3b6e' }, // Right (Medium Navy)
+        { angle: 135, size: 14, color: '#1252a0' }, // Bottom-Right (Medium Blue)
+        { angle: 180, size: 18, color: '#1b63a6' }, // Bottom (Brand Blue)
+        { angle: 225, size: 22, color: '#3a8fd4' }, // Bottom-Left (Bright Blue)
+        { angle: 270, size: 24, color: '#6bb3e8' }, // Left (Light Blue)
+        { angle: 315, size: 20, color: '#a8d4f5' }, // Top-Left (Pale Blue)
     ];
 
     return (
