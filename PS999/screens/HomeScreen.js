@@ -386,7 +386,7 @@ export default function HomeScreen({ navigation }) {
           style={styles.navItem}
           onPress={() => navigation.navigate('MyBids')}
         >
-          <Image source={require('../assets/footer-icons/bids_new.png')} style={[styles.navIcon, { tintColor: '#ffffff' }]} />
+          <Image source={require('../assets/footer-icons/bids_new.png')} style={[styles.navIcon, { tintColor: '#000000' }]} />
           <Text style={styles.navText}>My Bids</Text>
         </TouchableOpacity>
 
@@ -394,7 +394,7 @@ export default function HomeScreen({ navigation }) {
           style={styles.navItem}
           onPress={() => navigation.navigate('Passbook')}
         >
-          <Image source={require('../assets/footer-icons/passbook.png')} style={[styles.navIcon, { tintColor: '#ffffff' }]} />
+          <Image source={require('../assets/footer-icons/passbook.png')} style={[styles.navIcon, { tintColor: '#000000' }]} />
           <Text style={styles.navText}>Passbook</Text>
         </TouchableOpacity>
 
@@ -408,12 +408,12 @@ export default function HomeScreen({ navigation }) {
           style={styles.navItem}
           onPress={() => navigation.navigate('Funds')}
         >
-          <Ionicons name="wallet-outline" size={24} color="#000" />
+          <Ionicons name="wallet-outline" size={24} color="#000000" />
           <Text style={styles.navText}>Funds</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.navItem} onPress={openSupportWhatsApp}>
-          <Image source={require('../assets/footer-icons/chat_new.png')} style={[styles.navIcon, { tintColor: '#ffffff' }]} />
+          <Image source={require('../assets/footer-icons/chat_new.png')} style={[styles.navIcon, { tintColor: '#000000' }]} />
           <Text style={styles.navText}>Support</Text>
         </TouchableOpacity>
       </View>
@@ -865,7 +865,7 @@ const styles = StyleSheet.create({
   },
   navText: {
     fontSize: 11,
-    color: '#a0aec0',
+    color: '#555555',
     marginTop: 4,
     fontFamily: 'sans-serif',
   },
