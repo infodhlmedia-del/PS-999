@@ -330,7 +330,7 @@ export default function WithdrawFundScreen({ navigation }) {
                     </View>
                     <View style={[
                       styles.statusPill,
-                      { backgroundColor: item.request_accecept === 'ACCECEPT' ? '#E8F5E9' : '#FFF3E0' }
+                      { backgroundColor: item.request_accecept === 'ACCECEPT' ? '#E3F0FF' : '#FFF3E0' }
                     ]}>
                       <Text style={[
                         styles.statusText,

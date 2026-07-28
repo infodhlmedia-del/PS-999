@@ -250,7 +250,7 @@ const styles = StyleSheet.create({
     infoCard: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: '#E8F5E9',
+        backgroundColor: '#E3F0FF',
         padding: 15,
         borderRadius: 12,
         marginBottom: 25,

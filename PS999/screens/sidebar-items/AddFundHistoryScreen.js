@@ -119,7 +119,7 @@ export default function AddFundHistoryScreen({ navigation }) {
                 <View style={{ alignItems: 'flex-end', gap: 5 }}>
                     <View style={[
                         styles.statusPill,
-                        { backgroundColor: item.status === 'success' ? '#E8F5E9' : '#FFF3E0' }
+                        { backgroundColor: item.status === 'success' ? '#E3F0FF' : '#FFF3E0' }
                     ]}>
                         <Text style={[
                             styles.statusText,

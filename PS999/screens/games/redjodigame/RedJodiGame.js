@@ -407,7 +407,7 @@ export default function RedJodiGame({ navigation, route }) {
                                 <Text style={[styles.modalOptionText, selectedGameType === type && styles.modalOptionTextSelected]}>
                                     {type}
                                 </Text>
-                                {selectedGameType === type && <Ionicons name="checkmark-circle" size={22} color="#2E4A3E" />}
+                                {selectedGameType === type && <Ionicons name="checkmark-circle" size={22} color="#1b63a6" />}
                             </TouchableOpacity>
                         ))}
                     </View>
@@ -515,7 +515,7 @@ const styles = StyleSheet.create({
     modalContent: { backgroundColor: '#fff', borderRadius: 20, paddingVertical: 24, paddingHorizontal: 20, width: SCREEN_WIDTH * 0.8, maxWidth: 320 },
     modalTitle: { fontSize: 18, fontWeight: '700', color: '#333', textAlign: 'center', marginBottom: 20 },
     modalOption: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 16, paddingHorizontal: 20, borderRadius: 12, marginBottom: 12, backgroundColor: '#f5f7fa', borderWidth: 2, borderColor: '#E8E8E8' },
-    modalOptionSelected: { backgroundColor: '#E8F5E9', borderColor: '#2E4A3E' },
+    modalOptionSelected: { backgroundColor: '#E3F0FF', borderColor: '#1b63a6' },
     modalOptionText: { fontSize: 16, fontWeight: '600', color: '#333' },
-    modalOptionTextSelected: { color: '#2E4A3E' }
+    modalOptionTextSelected: { color: '#1b63a6' }
 });

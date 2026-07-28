@@ -540,7 +540,7 @@ export default function AddFundScreen({ navigation }) {
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.modernContactBtn} onPress={handleWhatsApp}>
-              <View style={[styles.contactIconCircle, { backgroundColor: '#E8F5E9' }]}>
+              <View style={[styles.contactIconCircle, { backgroundColor: '#E3F0FF' }]}>
                 <Ionicons name="logo-whatsapp" size={20} color="#2E7D32" />
               </View>
               
@@ -669,7 +669,7 @@ export default function AddFundScreen({ navigation }) {
                   return (
                     <View key={item.id} style={[styles.historyCard, { borderLeftColor: isSuccess ? '#2E7D32' : '#EF6C00' }]}>
                       {/* Left icon */}
-                      <View style={[styles.historyIcon, { backgroundColor: isSuccess ? '#E8F5E9' : '#FFF3E0' }]}>
+                      <View style={[styles.historyIcon, { backgroundColor: isSuccess ? '#E3F0FF' : '#FFF3E0' }]}>
                         <MaterialCommunityIcons
                           name={isSuccess ? 'check-circle' : 'clock-outline'}
                           size={24}
@@ -685,7 +685,7 @@ export default function AddFundScreen({ navigation }) {
 
                       {/* Right: status + refresh */}
                       <View style={styles.historyCardRight}>
-                        <View style={[styles.statusPill, { backgroundColor: isSuccess ? '#E8F5E9' : '#FFF3E0' }]}>
+                        <View style={[styles.statusPill, { backgroundColor: isSuccess ? '#E3F0FF' : '#FFF3E0' }]}>
                           <Text style={[styles.statusText, { color: isSuccess ? '#2E7D32' : '#EF6C00' }]}>
                             {isSuccess ? 'Accepted' : 'Processing'}
                           </Text>

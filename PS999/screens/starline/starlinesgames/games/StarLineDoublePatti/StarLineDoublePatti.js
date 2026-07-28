@@ -654,7 +654,7 @@ export default function StarlineDoublePanaGame({ navigation, route }) {
                                     selectedGameType === option && styles.modalOptionTextSelected
                                 ]}>{option}</Text>
                                 {selectedGameType === option && (
-                                    <Ionicons name="checkmark-circle" size={22} color="#2E4A3E" />
+                                    <Ionicons name="checkmark-circle" size={22} color="#1b63a6" />
                                 )}
                             </TouchableOpacity>
                         ))}
@@ -1094,7 +1094,7 @@ const styles = StyleSheet.create({
         marginBottom: 85,
     },
     digitHeader: {
-        backgroundColor: '#2E4A3E',
+        backgroundColor: '#1b63a6',
         paddingVertical: 8,
         paddingHorizontal: 20,
         borderRadius: 25,
@@ -1185,8 +1185,8 @@ const styles = StyleSheet.create({
         borderColor: '#E8E8E8',
     },
     modalOptionSelected: {
-        backgroundColor: '#E8F5E9',
-        borderColor: '#2E4A3E',
+        backgroundColor: '#E3F0FF',
+        borderColor: '#1b63a6',
     },
     modalOptionText: {
         fontSize: 16,
@@ -1195,7 +1195,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins_600SemiBold',
     },
     modalOptionTextSelected: {
-        color: '#2E4A3E',
+        color: '#1b63a6',
     },
     // Confirmation Modal Styles
     confirmTableHeader: {

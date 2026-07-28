@@ -195,7 +195,7 @@ const PSStarlineScreen = ({ navigation }) => {
           <View style={styles.notificationControl}>
             <Text style={styles.controlText}>Notification</Text>
             <Switch
-              trackColor={{ false: "#767577", true: "#2E5B3D" }}
+              trackColor={{ false: "#767577", true: "#1b63a6" }}
               thumbColor={isNotificationEnabled ? "#fff" : "#f4f3f4"}
               onValueChange={toggleNotification}
               value={isNotificationEnabled}

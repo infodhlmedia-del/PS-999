@@ -266,7 +266,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins_600SemiBold',
     },
     tipsCard: {
-        backgroundColor: '#E8F5E9',
+        backgroundColor: '#E3F0FF',
         borderRadius: 12,
         padding: 15,
         marginTop: 10,

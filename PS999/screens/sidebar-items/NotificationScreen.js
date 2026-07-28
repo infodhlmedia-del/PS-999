@@ -85,7 +85,7 @@ export default function NotificationScreen({ navigation }) {
                 return { 
                     icon: 'trophy', 
                     color: '#4CAF50', 
-                    bg: '#E8F5E9',
+                    bg: '#E3F0FF',
                     iconFamily: MaterialCommunityIcons 
                 };
             case 'warning':

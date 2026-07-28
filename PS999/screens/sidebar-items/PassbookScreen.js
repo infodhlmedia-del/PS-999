@@ -118,7 +118,7 @@ export default function PassbookScreen({ navigation }) {
 
     if (item.request_accecept === 'ACCECEPT') {
       statusColor = '#2E7D32'; // Green
-      statusBg = '#E8F5E9';
+      statusBg = '#E3F0FF';
     } else if (item.request_accecept === 'REJECT') { // Assuming 'REJECT' or similar
       statusColor = '#C62828'; // Red
       statusBg = '#FFEBEE';
@@ -128,7 +128,7 @@ export default function PassbookScreen({ navigation }) {
       <View style={styles.card}>
         <View style={styles.cardHeader}>
           <View style={styles.typeContainer}>
-            <View style={[styles.iconBox, { backgroundColor: isDeposit ? '#E8F5E9' : '#FFEBEE' }]}>
+            <View style={[styles.iconBox, { backgroundColor: isDeposit ? '#E3F0FF' : '#FFEBEE' }]}>
               <MaterialCommunityIcons
                 name={isDeposit ? "arrow-down-bold" : "arrow-up-bold"}
                 size={20}

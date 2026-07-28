@@ -513,7 +513,7 @@ export default function StarLineSinglePanaGame({ navigation, route }) {
                                     selectedGame === option && styles.modalOptionTextSelected
                                 ]}>{option}</Text>
                                 {selectedGame === option && (
-                                    <Ionicons name="checkmark-circle" size={22} color="#2E4A3E" />
+                                    <Ionicons name="checkmark-circle" size={22} color="#1b63a6" />
                                 )}
                             </TouchableOpacity>
                         ))}
@@ -823,11 +823,11 @@ const styles = StyleSheet.create({
         borderColor: '#E8E8E8',
     },
     modalOptionSelected: {
-        backgroundColor: '#E8F5E9',
-        borderColor: '#2E4A3E',
+        backgroundColor: '#E3F0FF',
+        borderColor: '#1b63a6',
     },
     modalOptionTextSelected: {
-        color: '#2E4A3E',
+        color: '#1b63a6',
     },
     // Special Mode Styles
     specialModeContainer: {

@@ -533,7 +533,7 @@ const styles = StyleSheet.create({
     winRow: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: '#e8f5e9',
+        backgroundColor: '#E3F0FF',
         padding: 8,
         borderRadius: 6,
         marginTop: 10,
