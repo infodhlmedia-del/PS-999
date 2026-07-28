@@ -472,7 +472,7 @@ export default function AddFundScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+      <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
 
       {/* Header */}
       <View style={styles.header}>
@@ -485,7 +485,7 @@ export default function AddFundScreen({ navigation }) {
         <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
 
           <TouchableOpacity onPress={() => navigation.navigate('AddFundHistory')} style={styles.historyBtn}>
-            <Ionicons name="time" size={24} color="#C27183" />
+            <Ionicons name="time" size={24} color="#2072b8" />
           </TouchableOpacity>
           <View style={styles.coinsBadge}>
 
@@ -552,7 +552,7 @@ export default function AddFundScreen({ navigation }) {
                 <View style={[styles.contactIconCircle, { backgroundColor: '#FFEB3B' }]}>
                   <MaterialCommunityIcons name="qrcode-scan" size={24} color="#000" />
                 </View>
-                <Text style={[styles.contactButtonText, { color: '#6B3A3A' }]}>Pay With QR</Text>
+                <Text style={[styles.contactButtonText, { color: '#0C1B30' }]}>Pay With QR</Text>
               </Animated.View>
             </TouchableOpacity>
           </View>
@@ -614,7 +614,7 @@ export default function AddFundScreen({ navigation }) {
             {/* History Header */}
             <View style={styles.historyHeader}>
               <View style={styles.historyTitleRow}>
-                <MaterialCommunityIcons name="clock-time-four" size={20} color="#C27183" />
+                <MaterialCommunityIcons name="clock-time-four" size={20} color="#2072b8" />
                 <Text style={styles.historyTitle}>Recent Requests</Text>
               </View>
               {loadingHistory && <View style={{ width: 20 }} />}
@@ -695,7 +695,7 @@ export default function AddFundScreen({ navigation }) {
                             style={styles.inlineRefreshBtn}
                             onPress={() => handleManualVerify(item.order_id, item.amount)}
                           >
-                            <Ionicons name="refresh" size={13} color="#C27183" />
+                            <Ionicons name="refresh" size={13} color="#2072b8" />
                             <Text style={styles.inlineRefreshText}>Refresh</Text>
                           </TouchableOpacity>
                         )}
@@ -740,7 +740,7 @@ export default function AddFundScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5EDE0',
+    backgroundColor: '#f5f7fa',
   },
   header: {
     flexDirection: 'row',
@@ -792,7 +792,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   userCardTop: {
-    backgroundColor: '#C27183',
+    backgroundColor: '#2072b8',
     paddingVertical: 30,
     paddingHorizontal: 20,
     alignItems: 'center',
@@ -889,14 +889,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     paddingVertical: 8,
     borderWidth: 2,
-    borderColor: '#C27183',
+    borderColor: '#2072b8',
     marginBottom: 20,
   },
   inputIconCircle: {
     width: 45,
     height: 45,
     borderRadius: 25,
-    backgroundColor: '#C27183',
+    backgroundColor: '#2072b8',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -918,7 +918,7 @@ const styles = StyleSheet.create({
   quickAmountButton: {
     flex: 1,
     marginHorizontal: 5,
-    backgroundColor: '#F5EDE0',
+    backgroundColor: '#f5f7fa',
     paddingVertical: 14,
     borderRadius: 12,
     alignItems: 'center',
@@ -937,7 +937,7 @@ const styles = StyleSheet.create({
     paddingTop: 10,
   },
   payButton: {
-    backgroundColor: '#C27183',
+    backgroundColor: '#2072b8',
     paddingVertical: 16,
     borderRadius: 30,
     alignItems: 'center',
@@ -1013,13 +1013,13 @@ const styles = StyleSheet.create({
     paddingVertical: 3,
     borderRadius: 10,
     borderWidth: 1,
-    borderColor: '#C27183',
+    borderColor: '#2072b8',
     marginTop: 5,
     alignSelf: 'flex-end',
   },
   inlineRefreshText: {
     fontSize: 10,
-    color: '#C27183',
+    color: '#2072b8',
     fontFamily: 'Poppins_600SemiBold',
     marginLeft: 3,
   },
@@ -1031,7 +1031,7 @@ const styles = StyleSheet.create({
   },
   historyAmount: {
     fontSize: 18,
-    color: '#C27183',
+    color: '#2072b8',
     fontFamily: 'Poppins_700Bold',
     marginBottom: 2,
   },
@@ -1078,7 +1078,7 @@ const styles = StyleSheet.create({
     gap: 5,
   },
   historyTabActive: {
-    backgroundColor: '#C27183',
+    backgroundColor: '#2072b8',
     elevation: 2,
   },
   historyTabText: {

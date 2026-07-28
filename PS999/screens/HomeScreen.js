@@ -228,7 +228,7 @@ export default function HomeScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+      <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
       <CustomLoader visible={refreshing} />
 
       {/* Header */}
@@ -244,7 +244,7 @@ export default function HomeScreen({ navigation }) {
             <Text style={styles.balanceText}>{balance.toFixed(1)}</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => navigation.navigate('Notification')}>
-            <Ionicons name="notifications" size={24} color="#C36578" style={styles.notificationIcon} />
+            <Ionicons name="notifications" size={24} color="#1b63a6" style={styles.notificationIcon} />
           </TouchableOpacity>
         </View>
       </View>
@@ -456,7 +456,7 @@ export default function HomeScreen({ navigation }) {
                 {/* Open Bid Time */}
                 <View style={styles.timeRow}>
                   <View style={styles.timeLabelContainer}>
-                    <Ionicons name="time-outline" size={22} color="#C36578" style={styles.timeIcon} />
+                    <Ionicons name="time-outline" size={22} color="#1b63a6" style={styles.timeIcon} />
                     <Text style={styles.timeLabel}>Open Bid Time</Text>
                   </View>
                   <Text style={styles.timeValue}>
@@ -467,7 +467,7 @@ export default function HomeScreen({ navigation }) {
                 {/* Close Bid Time */}
                 <View style={styles.timeRow}>
                   <View style={styles.timeLabelContainer}>
-                    <Ionicons name="time-outline" size={22} color="#C36578" style={styles.timeIcon} />
+                    <Ionicons name="time-outline" size={22} color="#1b63a6" style={styles.timeIcon} />
                     <Text style={styles.timeLabel}>Close Bid Time</Text>
                   </View>
                   <Text style={styles.timeValue}>
@@ -508,7 +508,7 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f2e3caff',
+    backgroundColor: '#e8ebf0',
   },
   header: {
     flexDirection: 'row',
@@ -521,7 +521,7 @@ const styles = StyleSheet.create({
   menuButton: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingHorizontal: 15,
     paddingVertical: 8,
     borderRadius: 25,
@@ -544,7 +544,7 @@ const styles = StyleSheet.create({
   balanceChip: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingHorizontal: 15,
     paddingVertical: 8,
     borderRadius: 25,
@@ -581,7 +581,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#6B3A3A',
+    backgroundColor: '#0C1B30',
     paddingVertical: 8,
     borderRadius: 30,
     marginHorizontal: 3,
@@ -605,7 +605,7 @@ const styles = StyleSheet.create({
     flex: 1, // Added flex: 1 to ensure it stays in bounds
   },
   actionWrapper: {
-    backgroundColor: '#f8daa7ff',
+    backgroundColor: '#dbeafe',
     marginHorizontal: 13,
     borderRadius: 12,
     paddingVertical: 10,
@@ -770,7 +770,7 @@ const styles = StyleSheet.create({
     width: 55,
     height: 55,
     borderRadius: 12,
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -854,7 +854,7 @@ const styles = StyleSheet.create({
     width: 55,
     height: 55,
     borderRadius: 27.5,
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     justifyContent: 'center',
     alignItems: 'center',
     shadowColor: '#000',
@@ -920,7 +920,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     borderWidth: 1,
-    borderColor: '#C36578',
+    borderColor: '#1b63a6',
     borderRadius: 12,
     paddingVertical: 10,
     paddingHorizontal: 15,
@@ -944,7 +944,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_400Regular',
   },
   infoModalOkButton: {
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     borderRadius: 10,
     paddingVertical: 12,
     alignItems: 'center',

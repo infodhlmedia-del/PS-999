@@ -56,7 +56,7 @@ const CustomAlert = ({
             case 'error': return '#F44336';
             case 'warning': return '#FF9800';
             case 'info': return '#2196F3';
-            default: return '#C27183';
+            default: return '#2072b8';
         }
     };
 
@@ -81,7 +81,7 @@ const CustomAlert = ({
             case 'error': return '#F44336';
             case 'warning': return '#FF9800';
             case 'info': return '#2196F3';
-            default: return '#C27183';
+            default: return '#2072b8';
         }
     };
 

@@ -362,12 +362,12 @@ export default function SPDPTPGame({ navigation, route }) {
       <View style={styles.staticContent}>
         <View style={styles.dateRow}>
           <View style={styles.dateBox}>
-            <Ionicons name="calendar" size={20} color="#C36578" />
+            <Ionicons name="calendar" size={20} color="#1b63a6" />
             <Text style={styles.dateText}>{date}</Text>
           </View>
           <View style={styles.dropdown}>
             <Text style={styles.dropdownText}>{selectedGame}</Text>
-            <Ionicons name="chevron-down" size={20} color="#F5C542" />
+            <Ionicons name="chevron-down" size={20} color="#1e63b3" />
           </View>
         </View>
 
@@ -490,7 +490,7 @@ export default function SPDPTPGame({ navigation, route }) {
                 style={{ flex: 1, alignItems: 'center' }}
                 onPress={() => deleteBid(bid.id)}
               >
-                <Ionicons name="trash" size={20} color="#C36578" />
+                <Ionicons name="trash" size={20} color="#1b63a6" />
               </TouchableOpacity>
             </View>
           ))
@@ -582,7 +582,7 @@ export default function SPDPTPGame({ navigation, route }) {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#F5EDE0' },
+  container: { flex: 1, backgroundColor: '#f5f7fa' },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -606,7 +606,7 @@ const styles = StyleSheet.create({
   balanceChip: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingHorizontal: 10,
     paddingVertical: 5,
     borderRadius: 15,
@@ -772,7 +772,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_600SemiBold',
   },
   generateButton: {
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingVertical: 12,
     borderRadius: 10,
     alignItems: 'center',
@@ -792,12 +792,12 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
     borderBottomWidth: 2,
-    borderBottomColor: '#C36578',
+    borderBottomColor: '#1b63a6',
   },
   tableHeaderText: {
     fontSize: 14,
     fontWeight: 'bold',
-    color: '#C36578',
+    color: '#1b63a6',
     textAlign: 'center',
     fontFamily: 'Poppins_600SemiBold',
   },
@@ -825,18 +825,18 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 14,
     fontWeight: 'bold',
-    color: '#C36578',
+    color: '#1b63a6',
     marginTop: 10,
     marginBottom: 10,
     fontFamily: 'Poppins_600SemiBold',
   },
   bottomBar: {
     flexDirection: 'row',
-    backgroundColor: '#F5EDE0',
+    backgroundColor: '#f5f7fa',
     paddingHorizontal: 15,
     paddingVertical: 15,
     borderTopWidth: 2,
-    borderTopColor: '#C36578',
+    borderTopColor: '#1b63a6',
     alignItems: 'center',
     position: 'absolute',
     bottom: 0,
@@ -863,7 +863,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_600SemiBold',
   },
   submitButton: {
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingHorizontal: 30,
     paddingVertical: 12,
     borderRadius: 25,
@@ -896,7 +896,7 @@ const styles = StyleSheet.create({
   },
   modalTableHeader: {
     flexDirection: 'row',
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingVertical: 10,
     paddingHorizontal: 15,
     borderRadius: 8,
@@ -960,7 +960,7 @@ const styles = StyleSheet.create({
   },
   modalConfirmButton: {
     flex: 1,
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingVertical: 12,
     borderRadius: 25,
     alignItems: 'center',

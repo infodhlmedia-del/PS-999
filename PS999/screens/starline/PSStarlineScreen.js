@@ -163,7 +163,7 @@ const PSStarlineScreen = ({ navigation }) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+      <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
 
       <View style={styles.header}>
         <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
@@ -230,7 +230,7 @@ const PSStarlineScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5EDE0',
+    backgroundColor: '#f5f7fa',
   },
   header: {
     flexDirection: 'row',

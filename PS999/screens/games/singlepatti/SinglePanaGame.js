@@ -466,7 +466,7 @@ export default function SinglePanaGame({ navigation, route }) {
               <Text style={styles.label}>Select Game Type:</Text>
               <TouchableOpacity style={styles.dropdown} onPress={() => setShowDropdown(true)}>
                 <Text style={styles.dropdownText}>{selectedGame}</Text>
-                <Ionicons name="chevron-down" size={20} color="#F5C542" />
+                <Ionicons name="chevron-down" size={20} color="#1e63b3" />
               </TouchableOpacity>
             </View>
 
@@ -510,14 +510,14 @@ export default function SinglePanaGame({ navigation, route }) {
           <View style={styles.specialTopRowFixed}>
             <View style={styles.specialTopRow}>
               <View style={[styles.dateBox, { flex: 1, marginRight: 10 }]}>
-                <Ionicons name="calendar" size={20} color="#C36578" style={{ marginRight: 8 }} />
+                <Ionicons name="calendar" size={20} color="#1b63a6" style={{ marginRight: 8 }} />
                 <Text style={styles.dateText}>
                   {currentDate.toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: 'numeric' }).replace(/\//g, '-')}
                 </Text>
               </View>
               <TouchableOpacity style={[styles.dropdown, { flex: 1 }]} onPress={() => setShowDropdown(true)}>
                 <Text style={styles.dropdownText}>{selectedGame}</Text>
-                <Ionicons name="chevron-down" size={20} color="#F5C542" />
+                <Ionicons name="chevron-down" size={20} color="#1e63b3" />
               </TouchableOpacity>
             </View>
           </View>
@@ -651,7 +651,7 @@ export default function SinglePanaGame({ navigation, route }) {
                 <Text style={styles.confirmButtonText}>Cancel</Text>
               </TouchableOpacity>
               <TouchableOpacity
-                style={[styles.confirmButton, { backgroundColor: '#C36578' }]}
+                style={[styles.confirmButton, { backgroundColor: '#1b63a6' }]}
                 onPress={finalSubmit}
               >
                 <Text style={styles.confirmButtonText}>Confirm Submit</Text>
@@ -692,7 +692,7 @@ export default function SinglePanaGame({ navigation, route }) {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#F5EDE0' },
+  container: { flex: 1, backgroundColor: '#f5f7fa' },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -713,7 +713,7 @@ const styles = StyleSheet.create({
   balanceChip: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingHorizontal: 10,
     paddingVertical: 5,
     borderRadius: 15,
@@ -754,8 +754,8 @@ const styles = StyleSheet.create({
     borderColor: '#E0E0E0',
   },
   modeButtonActive: {
-    backgroundColor: '#C36578',
-    borderColor: '#C36578',
+    backgroundColor: '#1b63a6',
+    borderColor: '#1b63a6',
   },
   modeText: {
     fontSize: 14,
@@ -798,7 +798,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_600SemiBold',
   },
   addButton: {
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingVertical: 12,
     borderRadius: 10,
     alignItems: 'center',
@@ -818,12 +818,12 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
     borderBottomWidth: 2,
-    borderBottomColor: '#C36578',
+    borderBottomColor: '#1b63a6',
   },
   tableHeaderText: {
     fontSize: 14,
     fontWeight: 'bold',
-    color: '#C36578',
+    color: '#1b63a6',
     textAlign: 'center',
     fontFamily: 'Poppins_600SemiBold',
   },
@@ -843,7 +843,7 @@ const styles = StyleSheet.create({
   },
   bottomBar: {
     flexDirection: 'row',
-    backgroundColor: '#F5EDE0',
+    backgroundColor: '#f5f7fa',
     paddingHorizontal: 15,
     paddingVertical: 12,
     borderTopWidth: 1,
@@ -874,7 +874,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_600SemiBold',
   },
   submitButton: {
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingHorizontal: 30,
     paddingVertical: 12,
     borderRadius: 25,
@@ -921,7 +921,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     borderRadius: 12,
     marginBottom: 10,
-    backgroundColor: '#F5EDE0',
+    backgroundColor: '#f5f7fa',
     borderWidth: 2,
     borderColor: '#E8E8E8',
   },
@@ -992,7 +992,7 @@ const styles = StyleSheet.create({
     height: 50,
   },
   panaTitleBox: {
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     justifyContent: 'center',
     alignItems: 'center',
     width: 60,
@@ -1015,7 +1015,7 @@ const styles = StyleSheet.create({
   // Confirmation Modal Styles
   confirmTableHeader: {
     flexDirection: 'row',
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingVertical: 10,
     borderRadius: 5,
   },
@@ -1039,7 +1039,7 @@ const styles = StyleSheet.create({
   confirmTotalRow: {
     paddingVertical: 15,
     borderTopWidth: 2,
-    borderTopColor: '#C36578',
+    borderTopColor: '#1b63a6',
     marginTop: 5,
   },
   confirmTotalLabel: {

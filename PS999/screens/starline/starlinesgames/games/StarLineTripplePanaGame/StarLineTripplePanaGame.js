@@ -274,7 +274,7 @@ export default function StarlineTriplePanaGame({ navigation, route }) {
 
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+            <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
 
             {/* Header with Marquee */}
             <View style={styles.header}>
@@ -297,7 +297,7 @@ export default function StarlineTriplePanaGame({ navigation, route }) {
                 {/* Date and Game Type Row */}
                 <View style={styles.topRow}>
                     <View style={styles.datePickerBtn}>
-                        <Ionicons name="calendar-outline" size={16} color="#C36578" />
+                        <Ionicons name="calendar-outline" size={16} color="#1b63a6" />
                         <Text style={styles.dateText}>{getCurrentDate()}</Text>
                     </View>
                     <TouchableOpacity
@@ -416,7 +416,7 @@ export default function StarlineTriplePanaGame({ navigation, route }) {
                                 <Text style={styles.confirmButtonText}>Cancel</Text>
                             </TouchableOpacity>
                             <TouchableOpacity
-                                style={[styles.confirmButton, { backgroundColor: '#C36578' }]}
+                                style={[styles.confirmButton, { backgroundColor: '#1b63a6' }]}
                                 onPress={finalSubmit}
                             >
                                 <Text style={styles.confirmButtonText}>Confirm Submit</Text>
@@ -444,7 +444,7 @@ export default function StarlineTriplePanaGame({ navigation, route }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     header: {
         flexDirection: 'row',
@@ -453,7 +453,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 12,
         paddingVertical: 12,
         paddingTop: 45,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     backButton: {
         width: 40,
@@ -476,7 +476,7 @@ const styles = StyleSheet.create({
     balanceChip: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingHorizontal: 10,
         paddingVertical: 6,
         borderRadius: 18,
@@ -545,7 +545,7 @@ const styles = StyleSheet.create({
         marginBottom: 12,
     },
     panaNumberBox: {
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingVertical: 14,
         paddingHorizontal: 18,
         borderTopLeftRadius: 10,
@@ -573,7 +573,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     submitButton: {
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingVertical: 16,
         alignItems: 'center',
         position: 'absolute',
@@ -624,7 +624,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         borderRadius: 12,
         marginBottom: 10,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
         borderWidth: 2,
         borderColor: '#E8E8E8',
     },
@@ -644,7 +644,7 @@ const styles = StyleSheet.create({
     // Confirmation Modal Styles
     confirmTableHeader: {
         flexDirection: 'row',
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingVertical: 10,
         borderRadius: 5,
     },
@@ -670,7 +670,7 @@ const styles = StyleSheet.create({
     confirmTotalRow: {
         paddingVertical: 15,
         borderTopWidth: 2,
-        borderTopColor: '#C36578',
+        borderTopColor: '#1b63a6',
         marginTop: 5,
     },
     confirmTotalLabel: {

@@ -397,7 +397,7 @@ export default function StarlineDoublePanaGame({ navigation, route }) {
             <Text style={styles.bidCell}>{item.type}</Text>
             <TouchableOpacity onPress={() => handleDeleteBid(item.id)} style={styles.deleteBtn}>
                 <View style={styles.deleteIconContainer}>
-                    <Ionicons name="trash-outline" size={12} color="#C36578" />
+                    <Ionicons name="trash-outline" size={12} color="#1b63a6" />
                 </View>
             </TouchableOpacity>
         </View>
@@ -437,7 +437,7 @@ export default function StarlineDoublePanaGame({ navigation, route }) {
 
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+            <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
 
             {/* Header with Marquee */}
             <View style={styles.header}>
@@ -553,10 +553,10 @@ export default function StarlineDoublePanaGame({ navigation, route }) {
 
                         {/* Table Header */}
                         <View style={styles.tableHeader}>
-                            <Text style={[styles.tableHeaderText, { color: '#C36578' }]}>Pana</Text>
-                            <Text style={[styles.tableHeaderText, { color: '#C36578' }]}>Point</Text>
-                            <Text style={[styles.tableHeaderText, { color: '#C36578' }]}>Type</Text>
-                            <Text style={[styles.tableHeaderText, { color: '#C36578' }]}>Delete</Text>
+                            <Text style={[styles.tableHeaderText, { color: '#1b63a6' }]}>Pana</Text>
+                            <Text style={[styles.tableHeaderText, { color: '#1b63a6' }]}>Point</Text>
+                            <Text style={[styles.tableHeaderText, { color: '#1b63a6' }]}>Type</Text>
+                            <Text style={[styles.tableHeaderText, { color: '#1b63a6' }]}>Delete</Text>
                         </View>
 
                         {/* Bids List */}
@@ -578,7 +578,7 @@ export default function StarlineDoublePanaGame({ navigation, route }) {
                         {/* Special Mode Content */}
                         <View style={styles.specialModeHeader}>
                             <View style={styles.datePickerBtn}>
-                                <Ionicons name="calendar-outline" size={16} color="#C36578" />
+                                <Ionicons name="calendar-outline" size={16} color="#1b63a6" />
                                 <Text style={styles.dateText}>{getCurrentDate()}</Text>
                             </View>
                             <TouchableOpacity
@@ -705,7 +705,7 @@ export default function StarlineDoublePanaGame({ navigation, route }) {
                                 <Text style={styles.confirmButtonText}>Cancel</Text>
                             </TouchableOpacity>
                             <TouchableOpacity
-                                style={[styles.confirmButton, { backgroundColor: '#C36578' }]}
+                                style={[styles.confirmButton, { backgroundColor: '#1b63a6' }]}
                                 onPress={finalSubmit}
                             >
                                 <Text style={styles.confirmButtonText}>Confirm Submit</Text>
@@ -733,7 +733,7 @@ export default function StarlineDoublePanaGame({ navigation, route }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     header: {
         flexDirection: 'row',
@@ -742,7 +742,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 12,
         paddingVertical: 12,
         paddingTop: 45,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     backButton: {
         width: 40,
@@ -765,7 +765,7 @@ const styles = StyleSheet.create({
     balanceChip: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingHorizontal: 10,
         paddingVertical: 6,
         borderRadius: 18,
@@ -797,8 +797,8 @@ const styles = StyleSheet.create({
         borderColor: '#E0E0E0',
     },
     modeButtonActive: {
-        backgroundColor: '#C36578',
-        borderColor: '#C36578',
+        backgroundColor: '#1b63a6',
+        borderColor: '#1b63a6',
     },
     modeButtonText: {
         fontSize: 13,
@@ -939,7 +939,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     addButton: {
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingVertical: 14,
         borderRadius: 25,
         alignItems: 'center',
@@ -996,7 +996,7 @@ const styles = StyleSheet.create({
         height: 22,
         borderRadius: 11,
         borderWidth: 2,
-        borderColor: '#C36578',
+        borderColor: '#1b63a6',
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#fff',
@@ -1015,9 +1015,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: 20,
         paddingVertical: 15,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
         borderTopWidth: 2,
-        borderTopColor: '#C36578',
+        borderTopColor: '#1b63a6',
         position: 'absolute',
         bottom: 0,
         left: 0,
@@ -1043,7 +1043,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins_600SemiBold',
     },
     submitButton: {
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingHorizontal: 45,
         paddingVertical: 14,
         borderRadius: 8,
@@ -1055,7 +1055,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins_600SemiBold',
     },
     fullSubmitButton: {
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingVertical: 18,
         alignItems: 'center',
         position: 'absolute',
@@ -1118,7 +1118,7 @@ const styles = StyleSheet.create({
         marginBottom: 8,
     },
     panaNumberBox: {
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingVertical: 12,
         paddingHorizontal: 15,
         borderTopLeftRadius: 8,
@@ -1180,7 +1180,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         borderRadius: 12,
         marginBottom: 10,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
         borderWidth: 2,
         borderColor: '#E8E8E8',
     },
@@ -1200,7 +1200,7 @@ const styles = StyleSheet.create({
     // Confirmation Modal Styles
     confirmTableHeader: {
         flexDirection: 'row',
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingVertical: 10,
         borderRadius: 5,
     },
@@ -1226,7 +1226,7 @@ const styles = StyleSheet.create({
     confirmTotalRow: {
         paddingVertical: 15,
         borderTopWidth: 2,
-        borderTopColor: '#C36578',
+        borderTopColor: '#1b63a6',
         marginTop: 5,
     },
     confirmTotalLabel: {

@@ -345,7 +345,7 @@ const JodiGame = ({ navigation, route }) => {
 
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+            <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
 
             {/* Header */}
             <View style={styles.header}>
@@ -415,7 +415,7 @@ const JodiGame = ({ navigation, route }) => {
                 ) : (
                     <View style={styles.inputGroup}>
                         <View style={styles.dateBadge}>
-                            <Ionicons name="calendar-outline" size={18} color="#C36578" />
+                            <Ionicons name="calendar-outline" size={18} color="#1b63a6" />
                             <Text style={styles.dateText}>{currentDate}</Text>
                         </View>
                     </View>
@@ -435,7 +435,7 @@ const JodiGame = ({ navigation, route }) => {
                                 <Text style={styles.tableCell}>{bid.jodi}</Text>
                                 <Text style={styles.tableCell}>{bid.points}</Text>
                                 <TouchableOpacity style={styles.tableCell} onPress={() => handleDeleteEasyBid(bid.id)}>
-                                    <Ionicons name="trash-outline" size={20} color="#C36578" />
+                                    <Ionicons name="trash-outline" size={20} color="#1b63a6" />
                                 </TouchableOpacity>
                             </View>
                         ))}
@@ -537,7 +537,7 @@ const JodiGame = ({ navigation, route }) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     header: {
         flexDirection: 'row',
@@ -546,7 +546,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15,
         paddingVertical: 12,
         paddingTop: 40,
-        backgroundColor: '#F5EDE0'
+        backgroundColor: '#f5f7fa'
     },
     backButton: {
         padding: 5,
@@ -563,7 +563,7 @@ const styles = StyleSheet.create({
     balanceChip: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingHorizontal: 10,
         paddingVertical: 5,
         borderRadius: 15,
@@ -582,7 +582,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         overflow: 'hidden',
         borderWidth: 1,
-        borderColor: '#C36578'
+        borderColor: '#1b63a6'
     },
     modeButton: {
         flex: 1,
@@ -591,7 +591,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff'
     },
     modeButtonSelected: {
-        backgroundColor: '#C36578'
+        backgroundColor: '#1b63a6'
     },
     modeButtonText: {
         fontSize: 14,
@@ -667,7 +667,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins_600SemiBold'
     },
     selectedDropdownText: {
-        color: '#C36578',
+        color: '#1b63a6',
         fontWeight: 'bold'
     },
     textInput: {
@@ -684,7 +684,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins_600SemiBold'
     },
     addButton: {
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingVertical: 12,
         borderRadius: 10,
         alignItems: 'center',
@@ -699,14 +699,14 @@ const styles = StyleSheet.create({
     tableHeader: {
         flexDirection: 'row',
         borderBottomWidth: 1,
-        borderBottomColor: '#C36578',
+        borderBottomColor: '#1b63a6',
         paddingBottom: 10,
         marginBottom: 10
     },
     tableHeaderText: {
         flex: 1,
         textAlign: 'center',
-        color: '#C36578',
+        color: '#1b63a6',
         fontWeight: 'bold',
         fontFamily: 'Poppins_600SemiBold'
     },
@@ -763,7 +763,7 @@ const styles = StyleSheet.create({
     },
     gridHeader: {
         width: 50,
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         justifyContent: 'center',
         alignItems: 'center'
     },
@@ -815,7 +815,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins_600SemiBold'
     },
     submitButton: {
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingHorizontal: 40,
         paddingVertical: 12,
         borderRadius: 10,
@@ -848,14 +848,14 @@ const styles = StyleSheet.create({
     modalTitle: {
         fontSize: 20,
         fontWeight: 'bold',
-        color: '#C36578',
+        color: '#1b63a6',
         textAlign: 'center',
         marginBottom: 15,
         fontFamily: 'Poppins_600SemiBold'
     },
     modalListHeader: {
         flexDirection: 'row',
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
         padding: 10,
         borderRadius: 8,
         marginBottom: 5
@@ -912,7 +912,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#999'
     },
     confirmButton: {
-        backgroundColor: '#C36578'
+        backgroundColor: '#1b63a6'
     },
     modalButtonText: {
         color: '#fff',

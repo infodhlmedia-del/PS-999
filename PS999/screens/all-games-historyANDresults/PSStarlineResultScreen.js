@@ -102,7 +102,7 @@ const PSStarlineResultScreen = () => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+            <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
 
             <View style={styles.header}>
                 <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
@@ -132,7 +132,7 @@ const PSStarlineResultScreen = () => {
 
             {loading && !refreshing ? (
                 <View style={styles.loaderContainer}>
-                    <ActivityIndicator size="large" color="#C36578" />
+                    <ActivityIndicator size="large" color="#1b63a6" />
                 </View>
             ) : (
                 <FlatList
@@ -141,7 +141,7 @@ const PSStarlineResultScreen = () => {
                     keyExtractor={(item) => item.id.toString()}
                     contentContainerStyle={styles.listContent}
                     refreshControl={
-                        <RefreshControl refreshing={refreshing} onRefresh={onRefresh} colors={["#C36578"]} />
+                        <RefreshControl refreshing={refreshing} onRefresh={onRefresh} colors={["#1b63a6"]} />
                     }
                 />
             )}
@@ -152,7 +152,7 @@ const PSStarlineResultScreen = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     header: {
         flexDirection: 'row',

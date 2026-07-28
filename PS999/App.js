@@ -129,7 +129,7 @@ const LoadingScreen = () => (
       style={loadingStyles.logo}
       resizeMode="contain"
     />
-    <ActivityIndicator size="large" color="#C36578" style={{ marginTop: 30 }} />
+    <ActivityIndicator size="large" color="#1b63a6" style={{ marginTop: 30 }} />
     <Text style={loadingStyles.loadingText}>Loading PS 999...</Text>
   </View>
 );

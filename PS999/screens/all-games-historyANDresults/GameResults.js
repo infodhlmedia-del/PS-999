@@ -162,7 +162,7 @@ export default function GameResults({ navigation }) {
 
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="dark-content" backgroundColor="#f2e3caff" />
+            <StatusBar barStyle="dark-content" backgroundColor="#e8ebf0" />
 
             {/* Header */}
             <View style={styles.header}>
@@ -184,14 +184,14 @@ export default function GameResults({ navigation }) {
             <View style={styles.content}>
                 {loading ? (
                     <View style={styles.loaderContainer}>
-                        <ActivityIndicator size="large" color="#6B3A3A" />
+                        <ActivityIndicator size="large" color="#0C1B30" />
                     </View>
                 ) : (
                     <ScrollView
                         showsVerticalScrollIndicator={false}
                         contentContainerStyle={{ paddingBottom: 20 }}
                         refreshControl={
-                            <RefreshControl refreshing={refreshing} onRefresh={onRefresh} colors={["#6B3A3A"]} />
+                            <RefreshControl refreshing={refreshing} onRefresh={onRefresh} colors={["#0C1B30"]} />
                         }
                     >
                         {marketResults.map(renderResultItem)}
@@ -269,7 +269,7 @@ export default function GameResults({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#f2e3caff',
+        backgroundColor: '#e8ebf0',
     },
     header: {
         flexDirection: 'row',
@@ -282,7 +282,7 @@ const styles = StyleSheet.create({
         width: 45,
         height: 45,
         borderRadius: 22.5,
-        backgroundColor: '#f2e3caff',
+        backgroundColor: '#e8ebf0',
         justifyContent: 'center',
         alignItems: 'center',
         borderWidth: 1,
@@ -347,7 +347,7 @@ const styles = StyleSheet.create({
     },
     marketName: {
         fontSize: 15,
-        color: '#6B3A3A',
+        color: '#0C1B30',
         fontFamily: 'Poppins_600SemiBold',
         flex: 1,
     },
@@ -375,7 +375,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontFamily: 'Roboto_700Bold',
         marginBottom: 20,
-        color: '#6B3A3A',
+        color: '#0C1B30',
     },
     pickerRow: {
         flexDirection: 'row',
@@ -409,7 +409,7 @@ const styles = StyleSheet.create({
         borderBottomColor: '#E0E0E0',
     },
     pickerItemActive: {
-        backgroundColor: '#6B3A3A',
+        backgroundColor: '#0C1B30',
     },
     pickerItemText: {
         fontSize: 16,
@@ -439,7 +439,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginLeft: 8,
         borderRadius: 12,
-        backgroundColor: '#6B3A3A',
+        backgroundColor: '#0C1B30',
     },
     modalCancelText: {
         color: '#666',

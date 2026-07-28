@@ -22,7 +22,7 @@ export default function TimeTableScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#F5EDE0' },
+  container: { flex: 1, backgroundColor: '#f5f7fa' },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',

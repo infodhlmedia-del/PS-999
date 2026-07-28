@@ -37,7 +37,7 @@ export default function MatkaChartsListScreen({ navigation }) {
 
     return (
         <SafeAreaView style={styles.container}>
-            <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+            <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
 
             {/* Header */}
             <View style={styles.header}>
@@ -91,7 +91,7 @@ export default function MatkaChartsListScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     header: {
         flexDirection: 'row',

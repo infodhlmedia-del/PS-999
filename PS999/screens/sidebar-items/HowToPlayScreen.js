@@ -58,7 +58,7 @@ export default function HowToPlayScreen({ navigation }) {
 
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="light-content" backgroundColor="#C36578" />
+            <StatusBar barStyle="light-content" backgroundColor="#1b63a6" />
 
             {/* Header */}
             <View style={styles.header}>
@@ -83,7 +83,7 @@ export default function HowToPlayScreen({ navigation }) {
                         </View>
                         <View style={styles.stepContent}>
                             <View style={styles.stepIconContainer}>
-                                <Ionicons name={step.icon} size={24} color="#C36578" />
+                                <Ionicons name={step.icon} size={24} color="#1b63a6" />
                             </View>
                             <View style={styles.stepText}>
                                 <Text style={styles.stepTitle}>{step.title}</Text>
@@ -126,13 +126,13 @@ export default function HowToPlayScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     header: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingHorizontal: 15,
         paddingVertical: 15,
         paddingTop: 45,
@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
         width: 30,
         height: 30,
         borderRadius: 15,
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         justifyContent: 'center',
         alignItems: 'center',
     },
@@ -183,7 +183,7 @@ const styles = StyleSheet.create({
     stepLine: {
         width: 2,
         flex: 1,
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         marginVertical: 5,
     },
     stepContent: {

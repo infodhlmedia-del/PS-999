@@ -105,8 +105,8 @@ export default function NotificationScreen({ navigation }) {
             default:
                 return { 
                     icon: 'bell', 
-                    color: '#6B3A3A', 
-                    bg: '#f2e3caff',
+                    color: '#0C1B30', 
+                    bg: '#e8ebf0',
                     iconFamily: MaterialCommunityIcons 
                 };
         }
@@ -145,7 +145,7 @@ export default function NotificationScreen({ navigation }) {
 
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="dark-content" backgroundColor="#f2e3caff" />
+            <StatusBar barStyle="dark-content" backgroundColor="#e8ebf0" />
             
             <View style={styles.header}>
                 <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
@@ -178,7 +178,7 @@ export default function NotificationScreen({ navigation }) {
             <View style={styles.content}>
                 {loading ? (
                     <View style={styles.centerNode}>
-                        <ActivityIndicator size="large" color="#6B3A3A" />
+                        <ActivityIndicator size="large" color="#0C1B30" />
                     </View>
                 ) : filteredList.length === 0 ? (
                     <View style={styles.centerNode}>
@@ -205,7 +205,7 @@ export default function NotificationScreen({ navigation }) {
                             <RefreshControl
                                 refreshing={refreshing}
                                 onRefresh={onRefresh}
-                                colors={['#6B3A3A']}
+                                colors={['#0C1B30']}
                             />
                         }
                     />
@@ -218,7 +218,7 @@ export default function NotificationScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: { 
         flex: 1, 
-        backgroundColor: '#f2e3caff' 
+        backgroundColor: '#e8ebf0' 
     },
     header: {
         flexDirection: 'row',
@@ -274,7 +274,7 @@ const styles = StyleSheet.create({
         borderRadius: 12,
     },
     activeTab: {
-        backgroundColor: '#6B3A3A',
+        backgroundColor: '#0C1B30',
         elevation: 4,
     },
     tabText: {
@@ -306,7 +306,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.08,
         shadowRadius: 4,
         borderLeftWidth: 4,
-        borderLeftColor: '#6B3A3A',
+        borderLeftColor: '#0C1B30',
     },
     typeBadge: {
         width: 50,

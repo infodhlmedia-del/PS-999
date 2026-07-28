@@ -112,7 +112,7 @@ export default function Sidebar({ isVisible, onClose, userData, navigation, shar
                             style={styles.menuItem}
                             onPress={onClose}
                         >
-                            <View style={[styles.menuIconContainer, { backgroundColor: '#C36578' }]}>
+                            <View style={[styles.menuIconContainer, { backgroundColor: '#1b63a6' }]}>
                                 <MenuIcon name="home" />
                             </View>
                             <Text style={styles.menuText}>Home</Text>
@@ -123,7 +123,7 @@ export default function Sidebar({ isVisible, onClose, userData, navigation, shar
                             style={styles.menuItem}
                             onPress={() => handleLink('MyProfile')}
                         >
-                            <View style={[styles.menuIconContainer, { backgroundColor: '#C36578' }]}>
+                            <View style={[styles.menuIconContainer, { backgroundColor: '#1b63a6' }]}>
                                 <MenuIcon name="person" />
                             </View>
                             <Text style={styles.menuText}>My Profile</Text>
@@ -134,7 +134,7 @@ export default function Sidebar({ isVisible, onClose, userData, navigation, shar
                             style={styles.menuItem}
                             onPress={() => handleLink('AddFund')}
                         >
-                            <View style={[styles.menuIconContainer, { backgroundColor: '#C36578' }]}>
+                            <View style={[styles.menuIconContainer, { backgroundColor: '#1b63a6' }]}>
                                 <MenuIcon name="currency-inr" type="MaterialCommunityIcons" />
                             </View>
                             <Text style={styles.menuText}>Add Money</Text>
@@ -145,7 +145,7 @@ export default function Sidebar({ isVisible, onClose, userData, navigation, shar
                             style={styles.menuItem}
                             onPress={() => handleLink('WithdrawFund')}
                         >
-                            <View style={[styles.menuIconContainer, { backgroundColor: '#C36578' }]}>
+                            <View style={[styles.menuIconContainer, { backgroundColor: '#1b63a6' }]}>
                                 <MenuIcon name="cash-remove" type="MaterialCommunityIcons" />
                             </View>
                             <Text style={styles.menuText}>Withdraw Money</Text>
@@ -156,7 +156,7 @@ export default function Sidebar({ isVisible, onClose, userData, navigation, shar
                             style={styles.menuItem}
                             onPress={() => handleLink('MyBids')}
                         >
-                            <View style={[styles.menuIconContainer, { backgroundColor: '#C36578' }]}>
+                            <View style={[styles.menuIconContainer, { backgroundColor: '#1b63a6' }]}>
                                 <MenuIcon name="history" type="MaterialCommunityIcons" />
                             </View>
                             <Text style={styles.menuText}>My Bids</Text>
@@ -167,7 +167,7 @@ export default function Sidebar({ isVisible, onClose, userData, navigation, shar
                             style={styles.menuItem}
                             onPress={() => handleLink('Passbook')}
                         >
-                            <View style={[styles.menuIconContainer, { backgroundColor: '#C36578' }]}>
+                            <View style={[styles.menuIconContainer, { backgroundColor: '#1b63a6' }]}>
                                 <MenuIcon name="swap-horizontal" type="MaterialCommunityIcons" />
                             </View>
                             <Text style={styles.menuText}>Passbook</Text>
@@ -178,7 +178,7 @@ export default function Sidebar({ isVisible, onClose, userData, navigation, shar
                             style={styles.menuItem}
                             onPress={() => handleLink('Funds')}
                         >
-                            <View style={[styles.menuIconContainer, { backgroundColor: '#C36578' }]}>
+                            <View style={[styles.menuIconContainer, { backgroundColor: '#1b63a6' }]}>
                                 <MenuIcon name="account-balance" type="MaterialIcons" />
                             </View>
                             <Text style={styles.menuText}>Funds</Text>
@@ -267,7 +267,7 @@ export default function Sidebar({ isVisible, onClose, userData, navigation, shar
                             style={styles.menuItem}
                             onPress={() => handleLink('MpinScreen')}
                         >
-                            <View style={[styles.menuIconContainer, { backgroundColor: '#C36578' }]}>
+                            <View style={[styles.menuIconContainer, { backgroundColor: '#1b63a6' }]}>
                                 <MenuIcon name="lock-closed" />
                             </View>
                             <Text style={styles.menuText}>Generate MPIN</Text>
@@ -403,7 +403,7 @@ const styles = StyleSheet.create({
         width: 60,
         height: 60,
         borderRadius: 30,
-        backgroundColor: '#C36578', // Matching reddish tone
+        backgroundColor: '#1b63a6', // Matching reddish tone
         justifyContent: 'center',
         alignItems: 'center',
         marginRight: 15,
@@ -446,7 +446,7 @@ const styles = StyleSheet.create({
         width: 40,
         height: 40,
         borderRadius: 20,
-        backgroundColor: '#C36578', // Reddish/Pink circle
+        backgroundColor: '#1b63a6', // Reddish/Pink circle
         justifyContent: 'center',
         alignItems: 'center',
         marginRight: 15,

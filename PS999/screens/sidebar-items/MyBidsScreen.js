@@ -54,7 +54,7 @@ export default function MyBidsScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#f2e3caff" />
+      <StatusBar barStyle="dark-content" backgroundColor="#e8ebf0" />
 
       <View style={styles.header}>
         <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButtonContainer}>
@@ -92,7 +92,7 @@ export default function MyBidsScreen({ navigation }) {
               <Text style={styles.optionSubtitle}>{option.subtitle}</Text>
             </View>
             <View style={styles.chevronContainer}>
-              <Ionicons name="chevron-forward" size={20} color="#6B3A3A" />
+              <Ionicons name="chevron-forward" size={20} color="#0C1B30" />
             </View>
           </TouchableOpacity>
         ))}
@@ -104,7 +104,7 @@ export default function MyBidsScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f2e3caff',
+    backgroundColor: '#e8ebf0',
   },
   header: {
     flexDirection: 'row',
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     width: 45,
     height: 45,
     borderRadius: 22.5,
-    backgroundColor: '#f2e3caff',
+    backgroundColor: '#e8ebf0',
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: 15,
@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
     borderRadius: 30,
-    backgroundColor: '#6B3A3A',
+    backgroundColor: '#0C1B30',
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: 15,
@@ -180,7 +180,7 @@ const styles = StyleSheet.create({
     width: 30,
     height: 30,
     borderRadius: 15,
-    backgroundColor: '#F5EDE0',
+    backgroundColor: '#f5f7fa',
     justifyContent: 'center',
     alignItems: 'center',
   },

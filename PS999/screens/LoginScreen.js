@@ -346,7 +346,7 @@ export default function LoginScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#F5C542" />
+      <StatusBar barStyle="dark-content" backgroundColor="#1e63b3" />
       <CustomLoader visible={isLoading} />
 
       <View style={styles.content}>
@@ -369,7 +369,7 @@ export default function LoginScreen({ navigation }) {
                   Welcome back, +91 {phoneNumber.substring(0, 2)}******{phoneNumber.substring(8)}
                 </Text>
                 <TouchableOpacity onPress={() => { setHasSavedMobile(false); setPhoneNumber(''); }}>
-                  <Text style={{ color: '#C36578', fontFamily: 'Poppins_600SemiBold', fontSize: 12, marginTop: 5 }}>
+                  <Text style={{ color: '#1b63a6', fontFamily: 'Poppins_600SemiBold', fontSize: 12, marginTop: 5 }}>
                     Not you? Change Number
                   </Text>
                 </TouchableOpacity>
@@ -551,7 +551,7 @@ export default function LoginScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5C542',
+    backgroundColor: '#1e63b3',
   },
 
   logo: {
@@ -561,7 +561,7 @@ const styles = StyleSheet.create({
 
   content: {
     flex: 1,
-    backgroundColor: '#F5EDE0',
+    backgroundColor: '#f5f7fa',
     marginTop: 100,
     borderTopLeftRadius: 40,
     borderTopRightRadius: 40,
@@ -595,7 +595,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: '#F5C542',
+    backgroundColor: '#1e63b3',
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 3,
@@ -625,7 +625,7 @@ const styles = StyleSheet.create({
   phoneIcon: {
     width: 60,
     height: 60,
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     borderRadius: 15,
     justifyContent: 'center',
     alignItems: 'center',
@@ -646,7 +646,7 @@ const styles = StyleSheet.create({
   },
   loginButton: {
     width: '80%',
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingVertical: 15,
     borderRadius: 30,
     alignItems: 'center',
@@ -698,7 +698,7 @@ const styles = StyleSheet.create({
   signupContactText: {
     fontSize: 15,
     fontWeight: 'bold',
-    color: '#C36578',
+    color: '#1b63a6',
     fontFamily: 'Poppins_600SemiBold',
   },
   signupContainer: {

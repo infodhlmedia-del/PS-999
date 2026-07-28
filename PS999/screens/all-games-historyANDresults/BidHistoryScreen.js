@@ -212,7 +212,7 @@ export default function BidHistoryScreen({ navigation }) {
 
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="dark-content" backgroundColor="#f2e3caff" />
+            <StatusBar barStyle="dark-content" backgroundColor="#e8ebf0" />
 
             {/* Header */}
             <View style={styles.header}>
@@ -232,14 +232,14 @@ export default function BidHistoryScreen({ navigation }) {
                     <Text style={styles.dateLabel}>From Date</Text>
                     <TouchableOpacity style={styles.dateButton} onPress={() => openDatePicker('from')}>
                         <Text style={styles.dateButtonText}>{fromDate}</Text>
-                        <Ionicons name="calendar-outline" size={16} color="#6B3A3A" />
+                        <Ionicons name="calendar-outline" size={16} color="#0C1B30" />
                     </TouchableOpacity>
                 </View>
                 <View style={styles.dateColumn}>
                     <Text style={styles.dateLabel}>To Date</Text>
                     <TouchableOpacity style={styles.dateButton} onPress={() => openDatePicker('to')}>
                         <Text style={styles.dateButtonText}>{toDate}</Text>
-                        <Ionicons name="calendar-outline" size={16} color="#6B3A3A" />
+                        <Ionicons name="calendar-outline" size={16} color="#0C1B30" />
                     </TouchableOpacity>
                 </View>
             </View>
@@ -248,18 +248,18 @@ export default function BidHistoryScreen({ navigation }) {
             <View style={styles.content}>
                 {loading ? (
                     <View style={styles.centerMode}>
-                        <ActivityIndicator size="large" color="#6B3A3A" />
+                        <ActivityIndicator size="large" color="#0C1B30" />
                     </View>
                 ) : paginatedBids.length === 0 ? (
                     <View style={styles.centerMode}>
-                        <MaterialCommunityIcons name="folder-outline" size={100} color="#6B3A3A" />
+                        <MaterialCommunityIcons name="folder-outline" size={100} color="#0C1B30" />
                         <Text style={styles.emptyText}>NO BID FOUND</Text>
                     </View>
                 ) : (
                     <ScrollView 
                         showsVerticalScrollIndicator={false}
                         refreshControl={
-                            <RefreshControl refreshing={refreshing} onRefresh={onRefresh} colors={['#6B3A3A']} />
+                            <RefreshControl refreshing={refreshing} onRefresh={onRefresh} colors={['#0C1B30']} />
                         }
                     >
                         {paginatedBids.map(renderBidItem)}
@@ -371,7 +371,7 @@ export default function BidHistoryScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#f2e3caff',
+        backgroundColor: '#e8ebf0',
     },
     header: {
         flexDirection: 'row',
@@ -385,7 +385,7 @@ const styles = StyleSheet.create({
         width: 45,
         height: 45,
         borderRadius: 22.5,
-        backgroundColor: '#f2e3caff',
+        backgroundColor: '#e8ebf0',
         justifyContent: 'center',
         alignItems: 'center',
         borderWidth: 1,
@@ -487,7 +487,7 @@ const styles = StyleSheet.create({
     gameName: {
         fontSize: 16,
         fontFamily: 'Roboto_700Bold',
-        color: '#6B3A3A',
+        color: '#0C1B30',
     },
     bidPoints: {
         fontSize: 18,
@@ -618,7 +618,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontFamily: 'Roboto_700Bold',
         marginBottom: 20,
-        color: '#6B3A3A',
+        color: '#0C1B30',
     },
     pickerRow: {
         flexDirection: 'row',
@@ -652,7 +652,7 @@ const styles = StyleSheet.create({
         borderBottomColor: '#E0E0E0',
     },
     pickerItemActive: {
-        backgroundColor: '#6B3A3A',
+        backgroundColor: '#0C1B30',
     },
     pickerItemText: {
         fontSize: 16,
@@ -682,7 +682,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginLeft: 8,
         borderRadius: 12,
-        backgroundColor: '#6B3A3A',
+        backgroundColor: '#0C1B30',
     },
     modalCancelText: {
         color: '#666',

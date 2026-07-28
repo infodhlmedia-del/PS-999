@@ -363,7 +363,7 @@ export default function StarlineSPMotorGame({ navigation, route }) {
 
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+            <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
             <View style={[styles.header, { paddingTop: Math.max(insets.top, 15) }]}>
                 <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
                     <Ionicons name="arrow-back" size={24} color="#000" />
@@ -379,7 +379,7 @@ export default function StarlineSPMotorGame({ navigation, route }) {
             <View style={styles.content}>
                 <View style={styles.topRow}>
                     <View style={styles.datePickerBtn}>
-                        <Ionicons name="calendar-outline" size={18} color="#C36578" />
+                        <Ionicons name="calendar-outline" size={18} color="#1b63a6" />
                         <Text style={styles.dateText}>{getCurrentDate()}</Text>
                     </View>
                     <TouchableOpacity style={styles.dropdown} onPress={() => setShowDropdown(true)}>
@@ -563,7 +563,7 @@ export default function StarlineSPMotorGame({ navigation, route }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F5EDE0'
+        backgroundColor: '#f5f7fa'
     },
     header: {
         flexDirection: 'row',
@@ -571,7 +571,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: 16,
         paddingVertical: 12,
-        backgroundColor: '#F5EDE0'
+        backgroundColor: '#f5f7fa'
     },
     backButton: {
         width: 44,
@@ -592,7 +592,7 @@ const styles = StyleSheet.create({
     balanceChip: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingHorizontal: 12,
         paddingVertical: 8,
         borderRadius: 20,
@@ -664,7 +664,7 @@ const styles = StyleSheet.create({
         fontWeight: '500'
     },
     addButton: {
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingVertical: 12,
         borderRadius: 12,
         alignItems: 'center',
@@ -680,13 +680,13 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         paddingVertical: 10,
         borderBottomWidth: 2,
-        borderBottomColor: '#C36578',
+        borderBottomColor: '#1b63a6',
         marginBottom: 4
     },
     headerCell: {
         fontSize: 14,
         fontWeight: '600',
-        color: '#C36578',
+        color: '#1b63a6',
         textAlign: 'center'
     },
     tableRow: {
@@ -714,7 +714,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     deleteButton: {
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         width: 32,
         height: 32,
         borderRadius: 16,
@@ -723,11 +723,11 @@ const styles = StyleSheet.create({
     },
     bottomBar: {
         flexDirection: 'row',
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
         paddingHorizontal: 16,
         paddingVertical: 15,
         borderTopWidth: 2,
-        borderTopColor: '#C36578',
+        borderTopColor: '#1b63a6',
         alignItems: 'center',
         gap: 12,
         position: 'absolute',
@@ -756,7 +756,7 @@ const styles = StyleSheet.create({
         color: '#000'
     },
     submitButton: {
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingVertical: 14,
         paddingHorizontal: 32,
         borderRadius: 12,
@@ -798,7 +798,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         borderRadius: 12,
         marginBottom: 12,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
         borderWidth: 2,
         borderColor: '#E8E8E8'
     },
@@ -843,13 +843,13 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         paddingVertical: 12,
         borderBottomWidth: 2,
-        borderBottomColor: '#C36578',
+        borderBottomColor: '#1b63a6',
         marginBottom: 8,
     },
     confirmHeaderText: {
         fontSize: 14,
         fontWeight: '600',
-        color: '#C36578',
+        color: '#1b63a6',
         textAlign: 'center',
     },
     confirmRow: {
@@ -883,7 +883,7 @@ const styles = StyleSheet.create({
         fontWeight: '600',
     },
     confirmSubmitButton: {
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
     },
     confirmSubmitButtonText: {
         color: '#fff',

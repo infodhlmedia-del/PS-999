@@ -134,7 +134,7 @@ export default function AddFundHistoryScreen({ navigation }) {
                             style={styles.inlineRefreshBtn}
                             onPress={() => handleVerify(item.order_id, item.amount)}
                         >
-                            <Ionicons name="refresh-circle" size={24} color="#6B3A3A" />
+                            <Ionicons name="refresh-circle" size={24} color="#0C1B30" />
                             <Text style={styles.inlineRefreshText}>Refresh</Text>
                         </TouchableOpacity>
                     )}
@@ -156,7 +156,7 @@ export default function AddFundHistoryScreen({ navigation }) {
 
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="dark-content" backgroundColor="#f2e3caff" />
+            <StatusBar barStyle="dark-content" backgroundColor="#e8ebf0" />
 
             {/* Header */}
             <View style={styles.header}>
@@ -191,7 +191,7 @@ export default function AddFundHistoryScreen({ navigation }) {
             <View style={styles.content}>
                 {loading ? (
                     <View style={styles.centerMode}>
-                        <ActivityIndicator size="large" color="#6B3A3A" />
+                        <ActivityIndicator size="large" color="#0C1B30" />
                     </View>
                 ) : history.filter(item => {
                     if (historyTab === 'accepted') return item.status === 'success';
@@ -202,7 +202,7 @@ export default function AddFundHistoryScreen({ navigation }) {
                         <MaterialCommunityIcons
                             name={historyTab === 'accepted' ? "check-circle-outline" : "clock-outline"}
                             size={100}
-                            color="#6B3A3A"
+                            color="#0C1B30"
                         />
                         <Text style={styles.emptyText}>NO {historyTab.toUpperCase()} DATA FOUND</Text>
                     </View>
@@ -211,7 +211,7 @@ export default function AddFundHistoryScreen({ navigation }) {
                         showsVerticalScrollIndicator={false}
                         contentContainerStyle={{ paddingBottom: 30 }}
                         refreshControl={
-                            <RefreshControl refreshing={refreshing} onRefresh={onRefresh} colors={['#6B3A3A']} />
+                            <RefreshControl refreshing={refreshing} onRefresh={onRefresh} colors={['#0C1B30']} />
                         }
                     >
                         {history
@@ -240,7 +240,7 @@ export default function AddFundHistoryScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#f2e3caff',
+        backgroundColor: '#e8ebf0',
     },
     header: {
         flexDirection: 'row',
@@ -254,7 +254,7 @@ const styles = StyleSheet.create({
         width: 45,
         height: 45,
         borderRadius: 22.5,
-        backgroundColor: '#f2e3caff',
+        backgroundColor: '#e8ebf0',
         justifyContent: 'center',
         alignItems: 'center',
         borderWidth: 1,
@@ -313,7 +313,7 @@ const styles = StyleSheet.create({
     amount: {
         fontSize: 20,
         fontFamily: 'Roboto_700Bold',
-        color: '#6B3A3A',
+        color: '#0C1B30',
     },
     statusPill: {
         paddingHorizontal: 10,
@@ -375,7 +375,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
     },
     historyTabActive: {
-        backgroundColor: '#6B3A3A',
+        backgroundColor: '#0C1B30',
     },
     historyTabText: {
         fontSize: 14,
@@ -393,12 +393,12 @@ const styles = StyleSheet.create({
         paddingVertical: 2,
         borderRadius: 10,
         borderWidth: 1,
-        borderColor: '#6B3A3A',
+        borderColor: '#0C1B30',
         marginTop: 2,
     },
     inlineRefreshText: {
         fontSize: 11,
-        color: '#6B3A3A',
+        color: '#0C1B30',
         fontFamily: 'Poppins_600SemiBold',
         marginLeft: 3,
     }

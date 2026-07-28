@@ -273,7 +273,7 @@ export default function SingleDigitGame({ navigation, route }) {
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+      <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
 
       {/* Header */}
       <View style={styles.header}>
@@ -315,7 +315,7 @@ export default function SingleDigitGame({ navigation, route }) {
               <Text style={styles.label}>Select Game Type:</Text>
               <TouchableOpacity style={styles.dropdown} onPress={() => setShowDropdown(true)}>
                 <Text style={styles.dropdownText}>{selectedGame}</Text>
-                <Ionicons name="chevron-down" size={20} color="#F5C542" />
+                <Ionicons name="chevron-down" size={20} color="#1e63b3" />
               </TouchableOpacity>
             </View>
 
@@ -364,12 +364,12 @@ export default function SingleDigitGame({ navigation, route }) {
             {/* Pill Selectors */}
             <View style={styles.pillRow}>
               <View style={styles.pill}>
-                <Ionicons name="calendar-outline" size={20} color="#C36578" />
+                <Ionicons name="calendar-outline" size={20} color="#1b63a6" />
                 <Text style={styles.pillText}>{currentDate}</Text>
               </View>
               <TouchableOpacity style={styles.pill} onPress={() => setShowDropdown(true)}>
                 <Text style={styles.pillText}>{selectedGame}</Text>
-                <Ionicons name="chevron-down" size={20} color="#C36578" style={styles.pillChevron} />
+                <Ionicons name="chevron-down" size={20} color="#1b63a6" style={styles.pillChevron} />
               </TouchableOpacity>
             </View>
           </View>
@@ -497,7 +497,7 @@ export default function SingleDigitGame({ navigation, route }) {
                 <Text style={styles.confirmButtonText}>Cancel</Text>
               </TouchableOpacity>
               <TouchableOpacity
-                style={[styles.confirmButton, { backgroundColor: '#C36578' }]}
+                style={[styles.confirmButton, { backgroundColor: '#1b63a6' }]}
                 onPress={finalSubmit}
               >
                 <Text style={styles.confirmButtonText}>Confirm Submit</Text>
@@ -539,7 +539,7 @@ export default function SingleDigitGame({ navigation, route }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5EDE0',
+    backgroundColor: '#f5f7fa',
   },
   header: {
     flexDirection: 'row',
@@ -564,7 +564,7 @@ const styles = StyleSheet.create({
   balanceChip: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingHorizontal: 10,
     paddingVertical: 5,
     borderRadius: 15,
@@ -627,8 +627,8 @@ const styles = StyleSheet.create({
     borderColor: '#E0E0E0',
   },
   modeButtonActive: {
-    backgroundColor: '#C36578',
-    borderColor: '#C36578',
+    backgroundColor: '#1b63a6',
+    borderColor: '#1b63a6',
   },
   modeText: {
     fontSize: 14,
@@ -677,7 +677,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_600SemiBold',
   },
   addButton: {
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingVertical: 12,
     borderRadius: 10,
     alignItems: 'center',
@@ -697,12 +697,12 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
     borderBottomWidth: 2,
-    borderBottomColor: '#C36578',
+    borderBottomColor: '#1b63a6',
   },
   tableHeaderText: {
     fontSize: 14,
     fontWeight: 'bold',
-    color: '#C36578',
+    color: '#1b63a6',
     textAlign: 'center',
     fontFamily: 'Poppins_600SemiBold',
   },
@@ -753,7 +753,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_600SemiBold',
   },
   submitButton: {
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingHorizontal: 30,
     paddingVertical: 12,
     borderRadius: 25,
@@ -800,7 +800,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     borderRadius: 12,
     marginBottom: 10,
-    backgroundColor: '#F5EDE0',
+    backgroundColor: '#f5f7fa',
     borderWidth: 2,
     borderColor: '#E8E8E8',
   },
@@ -871,7 +871,7 @@ const styles = StyleSheet.create({
   },
   digitLabel: {
     width: 60,
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -889,7 +889,7 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   specialSubmitButton: {
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingVertical: 15,
     borderRadius: 5,
     alignItems: 'center',
@@ -909,7 +909,7 @@ const styles = StyleSheet.create({
   // Confirmation Modal Styles
   confirmTableHeader: {
     flexDirection: 'row',
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingVertical: 10,
     borderRadius: 5,
   },
@@ -933,7 +933,7 @@ const styles = StyleSheet.create({
   confirmTotalRow: {
     paddingVertical: 15,
     borderTopWidth: 2,
-    borderTopColor: '#C36578',
+    borderTopColor: '#1b63a6',
     marginTop: 5,
   },
   confirmTotalLabel: {

@@ -263,7 +263,7 @@ export default function QRCodePayment({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+      <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
 
       {/* Header */}
       <View style={styles.header}>
@@ -285,7 +285,7 @@ export default function QRCodePayment({ navigation }) {
             onPress={handleQrPress}
           >
             {qrLoading && (
-              <ActivityIndicator size="large" color="#C27183" style={styles.qrLoader} />
+              <ActivityIndicator size="large" color="#2072b8" style={styles.qrLoader} />
             )}
             <WebView
               source={{ uri: 'https://dhlmedia.online/GoldenMatka/admin/Qr-PaymentLinkIMG.php' }}
@@ -445,7 +445,7 @@ export default function QRCodePayment({ navigation }) {
             </TouchableOpacity>
 
             <TouchableOpacity 
-              style={[styles.appSelectorItem, { backgroundColor: '#C27183' }]} 
+              style={[styles.appSelectorItem, { backgroundColor: '#2072b8' }]} 
               activeOpacity={0.8}
               onPress={() => openSelectedUpiApp('upi://pay')}
             >
@@ -470,7 +470,7 @@ export default function QRCodePayment({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1, 
-    backgroundColor: '#F5EDE0',
+    backgroundColor: '#f5f7fa',
     paddingTop: 45,
   },
   header: {
@@ -493,7 +493,7 @@ const styles = StyleSheet.create({
   bottomBar: {
     paddingHorizontal: 20,
     paddingVertical: 14,
-    backgroundColor: '#F5EDE0',
+    backgroundColor: '#f5f7fa',
     borderTopWidth: 1,
     borderTopColor: '#e0d5c8',
   },
@@ -549,7 +549,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
   },
   payUpiBtn: {
-    backgroundColor: '#C27183',
+    backgroundColor: '#2072b8',
     borderRadius: 12,
     paddingVertical: 12,
     paddingHorizontal: 24,
@@ -558,7 +558,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginTop: 14,
     elevation: 2,
-    shadowColor: '#C27183',
+    shadowColor: '#2072b8',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.25,
     shadowRadius: 4,
@@ -592,7 +592,7 @@ const styles = StyleSheet.create({
     shadowRadius: 3,
   },
   inputIcon: {
-    backgroundColor: '#C27183',
+    backgroundColor: '#2072b8',
     padding: 14,
     justifyContent: 'center',
     alignItems: 'center',
@@ -605,13 +605,13 @@ const styles = StyleSheet.create({
     height: 50,
   },
   submitBtn: {
-    backgroundColor: '#C27183',
+    backgroundColor: '#2072b8',
     borderRadius: 14,
     paddingVertical: 16,
     alignItems: 'center',
     marginBottom: 16,
     elevation: 3,
-    shadowColor: '#C27183',
+    shadowColor: '#2072b8',
     shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 0.3,
     shadowRadius: 6,

@@ -280,7 +280,7 @@ export default function FullSangamGame({ navigation, route }) {
 
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+            <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
             <View style={styles.header}>
                 <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
                     <Ionicons name="arrow-back" size={24} color="#000" />
@@ -295,7 +295,7 @@ export default function FullSangamGame({ navigation, route }) {
             <View style={styles.staticContent}>
                 <View style={styles.topRow}>
                     <View style={styles.datePickerBtn}>
-                        <Ionicons name="calendar-outline" size={18} color="#C36578" />
+                        <Ionicons name="calendar-outline" size={18} color="#1b63a6" />
                         <Text style={styles.dateText}>{getCurrentDate()}</Text>
                     </View>
                     <TouchableOpacity style={styles.dropdown} onPress={() => setShowDropdown(true)}>
@@ -371,7 +371,7 @@ export default function FullSangamGame({ navigation, route }) {
                             <Text style={[styles.bidCell, { flex: 2 }]}>{item.display}</Text>
                             <Text style={[styles.bidCell, { flex: 1 }]}>{item.points}</Text>
                             <TouchableOpacity onPress={() => handleDeleteBid(item.id)} style={styles.deleteBtn}>
-                                <Ionicons name="trash-outline" size={20} color="#C36578" />
+                                <Ionicons name="trash-outline" size={20} color="#1b63a6" />
                             </TouchableOpacity>
                         </View>
                     ))
@@ -470,7 +470,7 @@ export default function FullSangamGame({ navigation, route }) {
 
 
 const styles = StyleSheet.create({
-    container: { flex: 1, backgroundColor: '#F5EDE0' },
+    container: { flex: 1, backgroundColor: '#f5f7fa' },
     header: {
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -478,7 +478,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15,
         paddingVertical: 12,
         paddingTop: 40,
-        backgroundColor: '#F5EDE0'
+        backgroundColor: '#f5f7fa'
     },
     backButton: {
         padding: 5,
@@ -495,7 +495,7 @@ const styles = StyleSheet.create({
     balanceChip: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingHorizontal: 10,
         paddingVertical: 5,
         borderRadius: 15,
@@ -535,8 +535,8 @@ const styles = StyleSheet.create({
     inputCard: { backgroundColor: '#fff', borderRadius: 20, padding: 20, marginBottom: 20, elevation: 2, shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.1, shadowRadius: 4 },
     inputRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 15, justifyContent: 'space-between' },
     inputLabel: { fontSize: 14, color: '#333', fontWeight: '600', flex: 1 },
-    textInput: { backgroundColor: '#F9F9F9', borderBottomWidth: 2, borderBottomColor: '#C36578', paddingHorizontal: 15, paddingVertical: 8, fontSize: 16, color: '#000', fontWeight: '700', flex: 1, textAlign: 'center' },
-    addButton: { backgroundColor: '#C36578', paddingVertical: 12, borderRadius: 12, alignItems: 'center', marginTop: 10 },
+    textInput: { backgroundColor: '#F9F9F9', borderBottomWidth: 2, borderBottomColor: '#1b63a6', paddingHorizontal: 15, paddingVertical: 8, fontSize: 16, color: '#000', fontWeight: '700', flex: 1, textAlign: 'center' },
+    addButton: { backgroundColor: '#1b63a6', paddingVertical: 12, borderRadius: 12, alignItems: 'center', marginTop: 10 },
     addButtonText: { color: '#fff', fontSize: 14, fontWeight: '700', letterSpacing: 1 },
     tableContainer: { backgroundColor: '#fff', borderRadius: 20, padding: 10, marginBottom: 20 },
     tableHeader: {
@@ -547,12 +547,12 @@ const styles = StyleSheet.create({
         borderTopLeftRadius: 15,
         borderTopRightRadius: 15,
         borderBottomWidth: 2,
-        borderBottomColor: '#C36578',
+        borderBottomColor: '#1b63a6',
     },
     headerText: {
         fontSize: 14,
         fontWeight: 'bold',
-        color: '#C36578',
+        color: '#1b63a6',
         textAlign: 'center',
         fontFamily: 'Poppins_600SemiBold',
     },
@@ -575,31 +575,31 @@ const styles = StyleSheet.create({
         flex: 0.5,
         alignItems: 'center',
     },
-    bottomBar: { flexDirection: 'row', backgroundColor: '#F5EDE0', paddingHorizontal: 16, paddingVertical: 15, borderTopWidth: 2, borderTopColor: '#C36578', alignItems: 'center', gap: 12, position: 'absolute', bottom: 0, left: 0, right: 0 },
+    bottomBar: { flexDirection: 'row', backgroundColor: '#f5f7fa', paddingHorizontal: 16, paddingVertical: 15, borderTopWidth: 2, borderTopColor: '#1b63a6', alignItems: 'center', gap: 12, position: 'absolute', bottom: 0, left: 0, right: 0 },
     totalSection: { flexDirection: 'row', flex: 1, gap: 20 },
     totalItem: { alignItems: 'center', flex: 1 },
     totalLabel: { fontSize: 14, color: '#666', marginBottom: 4, fontWeight: '500' },
     totalValue: { fontSize: 22, fontWeight: '700', color: '#000' },
-    submitButton: { backgroundColor: '#C36578', paddingVertical: 14, paddingHorizontal: 32, borderRadius: 12, alignItems: 'center', minWidth: 140 },
+    submitButton: { backgroundColor: '#1b63a6', paddingVertical: 14, paddingHorizontal: 32, borderRadius: 12, alignItems: 'center', minWidth: 140 },
     submitButtonText: { color: '#fff', fontSize: 16, fontWeight: '700', letterSpacing: 0.5 },
     modalOverlay: { flex: 1, backgroundColor: 'rgba(0, 0, 0, 0.5)', justifyContent: 'center', alignItems: 'center' },
     confirmModal: { backgroundColor: '#fff', borderRadius: 20, padding: 20, width: SCREEN_WIDTH * 0.9, maxHeight: '80%' },
     confirmTitle: { fontSize: 20, fontWeight: '700', color: '#333', textAlign: 'center', marginBottom: 8 },
     confirmSubtitle: { fontSize: 14, color: '#666', textAlign: 'center', marginBottom: 16, fontWeight: '500' },
     confirmList: { maxHeight: 300, marginBottom: 16 },
-    confirmTableHeader: { flexDirection: 'row', paddingVertical: 12, borderBottomWidth: 2, borderBottomColor: '#C36578', marginBottom: 8 },
-    confirmHeaderText: { fontSize: 14, fontWeight: '600', color: '#C36578', textAlign: 'center' },
+    confirmTableHeader: { flexDirection: 'row', paddingVertical: 12, borderBottomWidth: 2, borderBottomColor: '#1b63a6', marginBottom: 8 },
+    confirmHeaderText: { fontSize: 14, fontWeight: '600', color: '#1b63a6', textAlign: 'center' },
     confirmRow: { flexDirection: 'row', paddingVertical: 12, borderBottomWidth: 1, borderBottomColor: '#E8E8E8' },
     confirmCell: { fontSize: 14, color: '#000', textAlign: 'center', fontWeight: '500' },
     confirmButtons: { flexDirection: 'row', gap: 12 },
     confirmButton: { flex: 1, paddingVertical: 14, borderRadius: 12, alignItems: 'center' },
     cancelButton: { backgroundColor: '#E8E8E8' },
     cancelButtonText: { color: '#666', fontSize: 16, fontWeight: '600' },
-    confirmSubmitButton: { backgroundColor: '#C36578' },
+    confirmSubmitButton: { backgroundColor: '#1b63a6' },
     confirmSubmitButtonText: { color: '#fff', fontSize: 16, fontWeight: '700' },
     modalContent: { backgroundColor: '#fff', borderRadius: 20, paddingVertical: 24, paddingHorizontal: 20, width: SCREEN_WIDTH * 0.8, maxWidth: 320 },
     modalTitle: { fontSize: 18, fontWeight: '700', color: '#333', textAlign: 'center', marginBottom: 20 },
-    modalOption: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 16, paddingHorizontal: 20, borderRadius: 12, marginBottom: 12, backgroundColor: '#F5EDE0', borderWidth: 2, borderColor: '#E8E8E8' },
+    modalOption: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 16, paddingHorizontal: 20, borderRadius: 12, marginBottom: 12, backgroundColor: '#f5f7fa', borderWidth: 2, borderColor: '#E8E8E8' },
     modalOptionSelected: { backgroundColor: '#E8F5E9', borderColor: '#2E4A3E' },
     modalOptionText: { fontSize: 16, fontWeight: '600', color: '#333' },
     modalOptionTextSelected: { color: '#2E4A3E' }

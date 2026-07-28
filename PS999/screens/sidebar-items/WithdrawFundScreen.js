@@ -199,7 +199,7 @@ export default function WithdrawFundScreen({ navigation }) {
         <Text style={styles.headerTitle}>Withdrawal  Fund</Text>
         <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
           <TouchableOpacity onPress={() => navigation.navigate('WithdrawFundHistory')} style={styles.historyBtn}>
-            <Ionicons name="time" size={24} color="#C27183" />
+            <Ionicons name="time" size={24} color="#2072b8" />
           </TouchableOpacity>
           <View style={styles.coinsBadge}>
             <MaterialCommunityIcons name="cash-multiple" size={16} color="#fff" />
@@ -257,10 +257,10 @@ export default function WithdrawFundScreen({ navigation }) {
             onPress={() => setShowPaymentModal(true)}
           >
             <View style={styles.methodInfo}>
-              {selectedMethod === 'phone_pay' && <Ionicons name="phone-portrait-outline" size={24} color="#C27183" />}
-              {selectedMethod === 'paytm' && <MaterialCommunityIcons name="wallet-outline" size={24} color="#C27183" />}
-              {selectedMethod === 'google_pay' && <Ionicons name="logo-google" size={24} color="#C27183" />}
-              {selectedMethod === 'upi' && <MaterialCommunityIcons name="integrated-circuit-chip" size={24} color="#C27183" />}
+              {selectedMethod === 'phone_pay' && <Ionicons name="phone-portrait-outline" size={24} color="#2072b8" />}
+              {selectedMethod === 'paytm' && <MaterialCommunityIcons name="wallet-outline" size={24} color="#2072b8" />}
+              {selectedMethod === 'google_pay' && <Ionicons name="logo-google" size={24} color="#2072b8" />}
+              {selectedMethod === 'upi' && <MaterialCommunityIcons name="integrated-circuit-chip" size={24} color="#2072b8" />}
               <Text style={styles.methodText}>
                 {selectedMethod === 'phone_pay' && 'PhonePe'}
                 {selectedMethod === 'paytm' && 'Paytm'}
@@ -274,7 +274,7 @@ export default function WithdrawFundScreen({ navigation }) {
           {/* New: Display Details of Selected Method */}
           {bankDetails && (
               <View style={styles.methodDetailsPreview}>
-                  <Ionicons name="information-circle-outline" size={16} color="#C27183" />
+                  <Ionicons name="information-circle-outline" size={16} color="#2072b8" />
                   <Text style={styles.methodDetailsTitle}>Will be sent to: </Text>
                   <Text style={styles.methodDetailsValue}>
                       {selectedMethod === 'phone_pay' && (bankDetails.phone_pay ? `Number: ${bankDetails.phone_pay}` : 'Not Added')}
@@ -466,9 +466,9 @@ export default function WithdrawFundScreen({ navigation }) {
                 >
                   <View style={styles.optionLeft}>
                     {method.type === 'Ionicons' ? (
-                      <Ionicons name={method.icon} size={24} color={selectedMethod === method.id ? '#C27183' : '#666'} />
+                      <Ionicons name={method.icon} size={24} color={selectedMethod === method.id ? '#2072b8' : '#666'} />
                     ) : (
-                      <MaterialCommunityIcons name={method.icon} size={24} color={selectedMethod === method.id ? '#C27183' : '#666'} />
+                      <MaterialCommunityIcons name={method.icon} size={24} color={selectedMethod === method.id ? '#2072b8' : '#666'} />
                     )}
                     <Text style={[
                       styles.optionText,
@@ -478,7 +478,7 @@ export default function WithdrawFundScreen({ navigation }) {
                     </Text>
                   </View>
                   {selectedMethod === method.id && (
-                    <Ionicons name="checkmark-circle" size={24} color="#C27183" />
+                    <Ionicons name="checkmark-circle" size={24} color="#2072b8" />
                   )}
                 </TouchableOpacity>
               ))}
@@ -495,7 +495,7 @@ export default function WithdrawFundScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5EDE0'
+    backgroundColor: '#f5f7fa'
   },
   header: {
     flexDirection: 'row',
@@ -542,7 +542,7 @@ const styles = StyleSheet.create({
     marginBottom: 25,
   },
   userInfoSection: {
-    backgroundColor: '#C27183',
+    backgroundColor: '#2072b8',
     paddingVertical: 30,
     paddingHorizontal: 20,
     alignItems: 'center',
@@ -588,7 +588,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     paddingVertical: 8,
     borderWidth: 2,
-    borderColor: '#C27183',
+    borderColor: '#2072b8',
   },
   sectionLabel: {
     fontSize: 16,
@@ -626,7 +626,7 @@ const styles = StyleSheet.create({
     width: 45,
     height: 45,
     borderRadius: 25,
-    backgroundColor: '#C27183',
+    backgroundColor: '#2072b8',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -642,7 +642,7 @@ const styles = StyleSheet.create({
     paddingBottom: 30,
   },
   sendButton: {
-    backgroundColor: '#C27183',
+    backgroundColor: '#2072b8',
     paddingVertical: 16,
     borderRadius: 30,
     alignItems: 'center',
@@ -694,7 +694,7 @@ const styles = StyleSheet.create({
   },
   historyAmount: {
     fontSize: 18,
-    color: '#C27183',
+    color: '#2072b8',
     fontWeight: 'bold',
     marginBottom: 2,
   },
@@ -735,7 +735,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   historyTabActive: {
-    backgroundColor: '#C27183',
+    backgroundColor: '#2072b8',
     elevation: 2,
   },
   historyTabText: {
@@ -793,12 +793,12 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_600SemiBold',
   },
   selectedOptionText: {
-    color: '#C27183',
+    color: '#2072b8',
     fontWeight: 'bold',
   },
   modalHeader: {
 
-    backgroundColor: '#C27183',
+    backgroundColor: '#2072b8',
     paddingVertical: 15,
     alignItems: 'center',
   },
@@ -819,7 +819,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_600SemiBold',
   },
   acceptButton: {
-    backgroundColor: '#C27183',
+    backgroundColor: '#2072b8',
     marginHorizontal: 50,
     marginBottom: 25,
     marginTop: 10,
@@ -843,7 +843,7 @@ const styles = StyleSheet.create({
     marginTop: -5,
     marginBottom: 15,
     borderLeftWidth: 3,
-    borderLeftColor: '#C27183',
+    borderLeftColor: '#2072b8',
   },
   methodDetailsTitle: {
     fontSize: 13,

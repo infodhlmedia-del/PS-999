@@ -113,7 +113,7 @@ export default function ChangePasswordScreen({ navigation }) {
 
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="light-content" backgroundColor="#C36578" />
+            <StatusBar barStyle="light-content" backgroundColor="#1b63a6" />
 
             {/* Header */}
             <View style={styles.header}>
@@ -223,13 +223,13 @@ export default function ChangePasswordScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     header: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingHorizontal: 15,
         paddingVertical: 15,
         paddingTop: 45,
@@ -293,7 +293,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins_600SemiBold',
     },
     submitButton: {
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         borderRadius: 12,
         height: 55,
         justifyContent: 'center',

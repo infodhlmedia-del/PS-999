@@ -66,7 +66,7 @@ export default function MyProfileScreen({ navigation }) {
 
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+            <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
 
             {/* Header */}
             <View style={styles.header}>
@@ -115,7 +115,7 @@ export default function MyProfileScreen({ navigation }) {
                         style={styles.editButton}
                         onPress={() => navigation.navigate('UpdateBankDetails')}
                     >
-                        <MaterialCommunityIcons name="bank-plus" size={20} color="#C36578" />
+                        <MaterialCommunityIcons name="bank-plus" size={20} color="#1b63a6" />
                         <Text style={styles.editButtonText}>Update Bank / UPI Details</Text>
                     </TouchableOpacity>
                 </ScrollView>
@@ -128,7 +128,7 @@ export default function MyProfileScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     header: {
         flexDirection: 'row',
@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15,
         paddingVertical: 15,
         paddingTop: 45,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     backButton: {
         width: 45,
@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
     loaderText: {
         marginTop: 10,
         fontSize: 16,
-        color: '#C36578',
+        color: '#1b63a6',
         fontFamily: 'Poppins_600SemiBold',
     },
     scrollContent: {
@@ -191,12 +191,12 @@ const styles = StyleSheet.create({
         width: 100,
         height: 100,
         borderRadius: 50,
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 15,
         borderWidth: 4,
-        borderColor: '#f8daa7ff',
+        borderColor: '#dbeafe',
     },
     userName: {
         fontSize: 24,
@@ -222,7 +222,7 @@ const styles = StyleSheet.create({
         width: 45,
         height: 45,
         borderRadius: 22.5,
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         justifyContent: 'center',
         alignItems: 'center',
         marginRight: 15,
@@ -250,13 +250,13 @@ const styles = StyleSheet.create({
         paddingVertical: 15,
         borderRadius: 15,
         borderWidth: 1,
-        borderColor: '#C36578',
+        borderColor: '#1b63a6',
         borderStyle: 'dashed',
     },
     editButtonText: {
         marginLeft: 10,
         fontSize: 16,
-        color: '#C36578',
+        color: '#1b63a6',
         fontWeight: 'bold',
         fontFamily: 'Poppins_600SemiBold',
     },

@@ -97,7 +97,7 @@ export default function MpinScreen({ navigation }) {
 
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="light-content" backgroundColor="#C36578" />
+            <StatusBar barStyle="light-content" backgroundColor="#1b63a6" />
 
             {/* Header */}
             <View style={styles.header}>
@@ -120,7 +120,7 @@ export default function MpinScreen({ navigation }) {
                 {/* MPIN Input */}
                 <Text style={styles.label}>Enter New MPIN</Text>
                 <View style={styles.inputContainer}>
-                    <Ionicons name="lock-closed-outline" size={20} color="#C36578" style={styles.inputIcon} />
+                    <Ionicons name="lock-closed-outline" size={20} color="#1b63a6" style={styles.inputIcon} />
                     <TextInput
                         style={styles.input}
                         placeholder="Enter 4-6 digit MPIN"
@@ -139,7 +139,7 @@ export default function MpinScreen({ navigation }) {
                 {/* Confirm MPIN Input */}
                 <Text style={styles.label}>Confirm MPIN</Text>
                 <View style={styles.inputContainer}>
-                    <Ionicons name="checkmark-circle-outline" size={20} color="#C36578" style={styles.inputIcon} />
+                    <Ionicons name="checkmark-circle-outline" size={20} color="#1b63a6" style={styles.inputIcon} />
                     <TextInput
                         style={styles.input}
                         placeholder="Confirm your MPIN"
@@ -192,13 +192,13 @@ export default function MpinScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     header: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingHorizontal: 15,
         paddingVertical: 15,
         paddingTop: 45,
@@ -286,13 +286,13 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     submitButton: {
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         borderRadius: 30,
         height: 55,
         justifyContent: 'center',
         alignItems: 'center',
         marginTop: 10,
-        shadowColor: '#C36578',
+        shadowColor: '#1b63a6',
         shadowOffset: { width: 0, height: 4 },
         shadowOpacity: 0.3,
         shadowRadius: 8,
@@ -315,7 +315,7 @@ const styles = StyleSheet.create({
     tipsTitle: {
         fontSize: 16,
         fontWeight: 'bold',
-        color: '#C36578',
+        color: '#1b63a6',
         marginBottom: 10,
         fontFamily: 'Poppins_600SemiBold',
     },

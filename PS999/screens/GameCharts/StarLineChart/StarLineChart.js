@@ -190,7 +190,7 @@ const StarlineChart = () => {
     if (loading && !refreshing) {
         return (
             <SafeAreaView style={styles.container}>
-                <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+                <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
                 <View style={styles.header}>
                     <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
                         <Ionicons name="arrow-back" size={24} color="#333" />
@@ -206,7 +206,7 @@ const StarlineChart = () => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+            <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
 
             {/* Top Navigation Header */}
             <View style={styles.header}>
@@ -240,7 +240,7 @@ const StarlineChart = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     header: {
         flexDirection: 'row',
@@ -248,7 +248,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15,
         paddingTop: 45,
         paddingBottom: 15,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     backButton: {
         width: 44,

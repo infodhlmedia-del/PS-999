@@ -19,7 +19,7 @@ export default function NoticeBoardScreen({ navigation }) {
 
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="light-content" backgroundColor="#C36578" />
+            <StatusBar barStyle="light-content" backgroundColor="#1b63a6" />
 
             {/* Header */}
             <View style={styles.header}>
@@ -40,7 +40,7 @@ export default function NoticeBoardScreen({ navigation }) {
                 {notices.map((notice) => (
                     <View key={notice.id} style={styles.noticeCard}>
                         <View style={styles.noticeHeader}>
-                            <Ionicons name="megaphone" size={20} color="#C36578" />
+                            <Ionicons name="megaphone" size={20} color="#1b63a6" />
                             <Text style={styles.noticeTitle}>{notice.title}</Text>
                         </View>
                         <Text style={styles.noticeDate}>{notice.date}</Text>
@@ -69,13 +69,13 @@ export default function NoticeBoardScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     header: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         paddingHorizontal: 15,
         paddingVertical: 15,
         paddingTop: 45,
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
         width: 35,
         height: 35,
         borderRadius: 18,
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         justifyContent: 'center',
         alignItems: 'center',
         marginRight: 15,

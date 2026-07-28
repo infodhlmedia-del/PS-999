@@ -40,7 +40,7 @@ export default function JackpotGameDetailScreen({ navigation, route }) {
 
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+            <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
 
             {/* Header */}
             <View style={styles.header}>
@@ -86,7 +86,7 @@ export default function JackpotGameDetailScreen({ navigation, route }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     header: {
         flexDirection: 'row',
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15,
         paddingVertical: 12,
         paddingTop: 45,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     backButton: {
         width: 40,
@@ -144,7 +144,7 @@ const styles = StyleSheet.create({
         width: 70,
         height: 70,
         borderRadius: 35,
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 12,

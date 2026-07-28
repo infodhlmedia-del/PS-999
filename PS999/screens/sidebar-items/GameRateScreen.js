@@ -68,7 +68,7 @@ export default function GameRateScreen({ navigation }) {
     return (
       <SafeAreaView style={styles.container}>
         <View style={styles.loaderContainer}>
-          <ActivityIndicator size="large" color="#C36578" />
+          <ActivityIndicator size="large" color="#1b63a6" />
           <Text style={{ marginTop: 10, color: '#666' }}>Fetching rates...</Text>
         </View>
       </SafeAreaView>
@@ -101,7 +101,7 @@ export default function GameRateScreen({ navigation }) {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+      <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
 
       <View style={styles.header}>
         <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
@@ -109,7 +109,7 @@ export default function GameRateScreen({ navigation }) {
         </TouchableOpacity>
         <Text style={styles.headerTitle}>Game Rate</Text>
         <TouchableOpacity onPress={fetchData} style={styles.refreshBadge}>
-          <Ionicons name="refresh" size={20} color="#C36578" />
+          <Ionicons name="refresh" size={20} color="#1b63a6" />
         </TouchableOpacity>
       </View>
 
@@ -132,7 +132,7 @@ export default function GameRateScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5EDE0',
+    backgroundColor: '#f5f7fa',
   },
   header: {
     flexDirection: 'row',
@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
     paddingBottom: 30,
   },
   sectionHeader: {
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingVertical: 12,
     paddingHorizontal: 15,
     borderRadius: 8,
@@ -216,7 +216,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5EDE0',
+    backgroundColor: '#f5f7fa',
   },
   noData: {
     textAlign: 'center',

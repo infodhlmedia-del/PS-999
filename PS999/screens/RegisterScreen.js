@@ -149,7 +149,7 @@ export default function RegisterScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#F5C542" />
+      <StatusBar barStyle="dark-content" backgroundColor="#1e63b3" />
       <CustomLoader visible={isLoading} />
 
       <View style={styles.content}>
@@ -168,7 +168,7 @@ export default function RegisterScreen({ navigation }) {
         {/* Phone Input */}
         <View style={styles.inputContainer}>
           <View style={styles.inputIcon}>
-            <Ionicons name="phone-portrait" size={24} color="#C36578" />
+            <Ionicons name="phone-portrait" size={24} color="#1b63a6" />
           </View>
           <TextInput
             style={styles.input}
@@ -184,7 +184,7 @@ export default function RegisterScreen({ navigation }) {
         {/* Username Input */}
         <View style={styles.inputContainer}>
           <View style={styles.inputIcon}>
-            <Ionicons name="person" size={24} color="#C36578" />
+            <Ionicons name="person" size={24} color="#1b63a6" />
           </View>
           <TextInput
             style={styles.input}
@@ -198,7 +198,7 @@ export default function RegisterScreen({ navigation }) {
         {/* Password Input */}
         <View style={styles.inputContainer}>
           <View style={styles.inputIcon}>
-            <Ionicons name="lock-closed" size={24} color="#C36578" />
+            <Ionicons name="lock-closed" size={24} color="#1b63a6" />
           </View>
           <TextInput
             style={styles.input}
@@ -255,11 +255,11 @@ export default function RegisterScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5C542',
+    backgroundColor: '#1e63b3',
   },
   content: {
     flex: 1,
-    backgroundColor: '#F5EDE0',
+    backgroundColor: '#f5f7fa',
     marginTop: 100,
     borderTopLeftRadius: 40,
     borderTopRightRadius: 40,
@@ -342,7 +342,7 @@ const styles = StyleSheet.create({
   },
   registerButton: {
     width: '90%',
-    backgroundColor: '#C36578',
+    backgroundColor: '#1b63a6',
     paddingVertical: 15,
     borderRadius: 30,
     alignItems: 'center',

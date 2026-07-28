@@ -197,7 +197,7 @@ export default function PSJackpotScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+      <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
 
       {/* Fixed Header Section */}
       <View style={styles.fixedContent}>
@@ -284,10 +284,10 @@ export default function PSJackpotScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5EDE0',
+    backgroundColor: '#f5f7fa',
   },
   fixedContent: {
-    backgroundColor: '#F5EDE0',
+    backgroundColor: '#f5f7fa',
     paddingBottom: 5,
   },
   header: {
@@ -297,7 +297,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 12,
     paddingTop: 50,
-    backgroundColor: '#F5EDE0',
+    backgroundColor: '#f5f7fa',
     gap: 8,
   },
   backButton: {

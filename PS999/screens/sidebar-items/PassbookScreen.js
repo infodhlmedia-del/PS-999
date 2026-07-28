@@ -166,7 +166,7 @@ export default function PassbookScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+      <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
 
       {/* Header */}
       <View style={styles.header}>
@@ -201,7 +201,7 @@ export default function PassbookScreen({ navigation }) {
       <View style={styles.content}>
         {loading ? (
           <View style={styles.centerMode}>
-            <ActivityIndicator size="large" color="#6B3A3A" />
+            <ActivityIndicator size="large" color="#0C1B30" />
           </View>
         ) : transactions.filter(item => 
           activeTab === 'accepted' ? item.request_accecept === 'ACCECEPT' : item.request_accecept !== 'ACCECEPT'
@@ -224,7 +224,7 @@ export default function PassbookScreen({ navigation }) {
             showsVerticalScrollIndicator={false}
             contentContainerStyle={{ paddingBottom: 20 }}
             refreshControl={
-              <RefreshControl refreshing={refreshing} onRefresh={onRefresh} colors={['#6B3A3A']} />
+              <RefreshControl refreshing={refreshing} onRefresh={onRefresh} colors={['#0C1B30']} />
             }
           />
         )}
@@ -236,7 +236,7 @@ export default function PassbookScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5EDE0'
+    backgroundColor: '#f5f7fa'
   },
   header: {
     flexDirection: 'row',
@@ -366,7 +366,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   activeTab: {
-    backgroundColor: '#6B3A3A',
+    backgroundColor: '#0C1B30',
   },
   tabText: {
     fontSize: 14,

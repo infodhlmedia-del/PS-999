@@ -44,7 +44,7 @@ const InputField = ({ icon, placeholder, value, onChangeText, keyboardType = 'de
 
 const FullScreenLoader = () => (
     <View style={styles.fullScreenLoader}>
-        <ActivityIndicator size="large" color="#C36578" />
+        <ActivityIndicator size="large" color="#1b63a6" />
         <Text style={styles.loaderText}>Fetching Saved Details...</Text>
     </View>
 );
@@ -251,7 +251,7 @@ export default function UpdateBankDetailsScreen({ navigation }) {
             keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 0}
         >
             <View style={{ flex: 1 }}>
-                <StatusBar barStyle="dark-content" backgroundColor="#F5EDE0" />
+                <StatusBar barStyle="dark-content" backgroundColor="#f5f7fa" />
 
                 {/* Header */}
                 <View style={styles.header}>
@@ -375,18 +375,18 @@ export default function UpdateBankDetailsScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     fullScreenLoader: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     loaderText: {
         marginTop: 10,
         fontSize: 16,
-        color: '#C36578',
+        color: '#1b63a6',
         fontFamily: 'Poppins_600SemiBold',
     },
     header: {
@@ -396,7 +396,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15,
         paddingVertical: 15,
         paddingTop: 45,
-        backgroundColor: '#F5EDE0',
+        backgroundColor: '#f5f7fa',
     },
     backButton: {
         width: 45,
@@ -428,7 +428,7 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         width: '100%',
         borderWidth: 2,
-        borderColor: '#C36578',
+        borderColor: '#1b63a6',
         height: 65,
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 2 },
@@ -440,7 +440,7 @@ const styles = StyleSheet.create({
         width: 45,
         height: 45,
         borderRadius: 22.5,
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         justifyContent: 'center',
         alignItems: 'center',
         marginRight: 15,
@@ -467,7 +467,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins_600SemiBold',
     },
     saveButton: {
-        backgroundColor: '#C36578',
+        backgroundColor: '#1b63a6',
         width: '60%',
         paddingVertical: 15,
         borderRadius: 25,
@@ -498,7 +498,7 @@ const styles = StyleSheet.create({
     },
     label: {
         fontSize: 14,
-        color: '#C36578',
+        color: '#1b63a6',
         fontWeight: '600',
         fontFamily: 'Poppins_600SemiBold',
         alignSelf: 'flex-start',

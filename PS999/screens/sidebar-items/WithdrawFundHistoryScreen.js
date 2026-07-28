@@ -102,7 +102,7 @@ export default function WithdrawFundHistoryScreen({ navigation }) {
 
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="dark-content" backgroundColor="#f2e3caff" />
+            <StatusBar barStyle="dark-content" backgroundColor="#e8ebf0" />
 
             {/* Header */}
             <View style={styles.header}>
@@ -137,7 +137,7 @@ export default function WithdrawFundHistoryScreen({ navigation }) {
             <View style={styles.content}>
                 {loading ? (
                     <View style={styles.centerMode}>
-                        <ActivityIndicator size="large" color="#6B3A3A" />
+                        <ActivityIndicator size="large" color="#0C1B30" />
                     </View>
                 ) : history.filter(item => 
                     historyTab === 'accepted' ? item.request_accecept === 'ACCECEPT' : item.request_accecept !== 'ACCECEPT'
@@ -146,7 +146,7 @@ export default function WithdrawFundHistoryScreen({ navigation }) {
                         <MaterialCommunityIcons 
                             name={historyTab === 'accepted' ? "check-circle-outline" : "clock-outline"} 
                             size={100} 
-                            color="#6B3A3A" 
+                            color="#0C1B30" 
                         />
                         <Text style={styles.emptyText}>NO {historyTab.toUpperCase()} DATA FOUND</Text>
                     </View>
@@ -155,7 +155,7 @@ export default function WithdrawFundHistoryScreen({ navigation }) {
                         showsVerticalScrollIndicator={false} 
                         contentContainerStyle={{ paddingBottom: 30 }}
                         refreshControl={
-                            <RefreshControl refreshing={refreshing} onRefresh={onRefresh} colors={['#6B3A3A']} />
+                            <RefreshControl refreshing={refreshing} onRefresh={onRefresh} colors={['#0C1B30']} />
                         }
                     >
                         {history
@@ -180,7 +180,7 @@ export default function WithdrawFundHistoryScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#f2e3caff',
+        backgroundColor: '#e8ebf0',
     },
     header: {
         flexDirection: 'row',
@@ -194,7 +194,7 @@ const styles = StyleSheet.create({
         width: 45,
         height: 45,
         borderRadius: 22.5,
-        backgroundColor: '#f2e3caff',
+        backgroundColor: '#e8ebf0',
         justifyContent: 'center',
         alignItems: 'center',
         borderWidth: 1,
@@ -253,7 +253,7 @@ const styles = StyleSheet.create({
     amount: {
         fontSize: 20,
         fontFamily: 'Roboto_700Bold',
-        color: '#6B3A3A',
+        color: '#0C1B30',
     },
     statusPill: {
         paddingHorizontal: 10,
@@ -315,7 +315,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
     },
     historyTabActive: {
-        backgroundColor: '#6B3A3A',
+        backgroundColor: '#0C1B30',
     },
     historyTabText: {
         fontSize: 14,
