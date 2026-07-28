@@ -138,7 +138,7 @@ const LoadingScreen = () => (
 const loadingStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#081d33',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -149,7 +149,7 @@ const loadingStyles = StyleSheet.create({
   loadingText: {
     marginTop: 20,
     fontSize: 18,
-    color: '#333',
+    color: '#ffffff',
     fontWeight: 'bold',
   }
 });
